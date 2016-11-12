@@ -1,0 +1,76 @@
+body,
+html {
+    font-size: 14px;
+    background: #fff;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft YaHei", Helvetica Neue, Tahoma, Arial, "微软雅黑", "宋体", "黑体";
+    font-weight: lighter;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    border: 0px;
+}
+
+ul,
+li,
+dl,
+dd,
+dt,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 12px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+button, 
+input,
+textarea {
+    font-family: inherit;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    *zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+}

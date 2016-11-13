@@ -1,3 +1,11 @@
+/**
+ * author: luozh
+ * time: 2016-11-05
+ * version: 1.0.0
+ */
+
+
+/* header */
 .header {
     position: absolute;
     top: 0;
@@ -130,6 +138,8 @@ li.first:hover:after {
     right: 5px;
 }
 
+
+/* banner */
 .banner {
     position: relative;
     overflow: hidden;
@@ -188,6 +198,7 @@ li.first:hover:after {
     background-color: #e95f24;
 }
 
+/* about */
 .about {
     position: relative;
 }
@@ -362,6 +373,8 @@ li.first:hover:after {
     font-weight: 600;
 }
 
+
+/* example */
 .example {
     position: relative;
     background: url("../images/example/expame_bg.jpg") center top no-repeat;
@@ -486,6 +499,8 @@ li.first:hover:after {
     cursor: pointer;
 }
 
+
+/* lession */
 .lession {
     position: relative;
 }
@@ -572,6 +587,12 @@ li.first:hover:after {
     font-size: 14px;
 }
 
+.show480 {
+    display: none;
+}
+
+
+/* member */
 .member {
     position: relative;
     background: url("../images/member/member_bg.jpg") fixed;
@@ -598,6 +619,8 @@ li.first:hover:after {
     color: #fff;
 }
 
+
+/* service */
 .service {
     position: relative;
     background: url("../images/service/service_bg.jpg") center top no-repeat;
@@ -720,6 +743,8 @@ li.first:hover:after {
     cursor: pointer;
 }
 
+
+/* partner */
 .partner {
     position: relative;
     background: url("../images/partner/partner_bg.jpg");
@@ -762,6 +787,8 @@ li.first:hover:after {
     overflow: hidden;
 }
 
+
+/* contact */
 .contact {
     position: relative;
     background: url("../images/contact/contact_bg.jpg");
@@ -940,6 +967,8 @@ li.first:hover:after {
     border-style: dashed solid dashed dashed;
 }
 
+
+/* other */
 .ml20 {
     margin-left: 20px;
 }
@@ -1053,14 +1082,492 @@ li.first:hover:after {
     animation-fill-mode: both
 }
 
-@media (max-width: 1920px) and (min-width: 1440px) {}
 
-@media (max-width: 1439px) and (min-width: 1200px) {}
+/* media query */
+@media (max-width: 1920px) and (min-width: 1440px) {
 
-@media (max-width: 1199px) and (min-width: 1024px) {}
+}
 
-@media (max-width: 1023px) and (min-width: 640px) {}
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .logo {
+        left: 50px;
+    }
 
-@media (max-width: 639px) and (min-width: 480px) {}
+    .phone {
+        right: 50px;
+    }
 
-@media (max-width: 639px) and (min-width: 480px) {}
+    .contact-box {
+        width: 90%;
+    }
+
+    .sd-txt {
+        padding: 26px 30px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+
+    /* header */
+    .container {
+        width: 630px;
+    }
+
+    .logo {
+        left: 20px;
+    }
+
+    .nav {
+        width: 535px;
+    }
+
+    .nav > li > a {
+        font-size: 12px;
+    }
+
+    .phone {
+        right: 10px;
+    }
+
+    .phone span {
+        font-size: 12px;
+    }
+    
+    /* about */
+    .detail2 {
+        display: none;
+    }
+
+    .ab-computer {
+        width: 400px;
+        height: 300px;
+    }
+
+    .ab-ipad {
+        width: 150px;
+        height: 100px;
+    }
+
+    .ab-book {
+        width: 100px;
+        height: 170px;
+        left: 352px;
+    }
+
+    .ab-line {
+        width: 250px;
+        height: 150px;
+        bottom: 100px;
+        left: -200px
+    }
+
+    .scroll-box {
+        left: 17px;
+        bottom: 104px;
+        width: 366px;
+        height: 184px;
+    }
+
+    /* service */
+    .service-platform {
+        width: 100%;
+    }
+
+    .service-platform .item img {
+        width: 140px;
+        height: 90px;
+    }
+
+    .sd-txt {
+        padding: 26px 30px;
+    }
+    
+    /* partner */
+    .partner-logo {
+        max-width: 930px;
+    }
+
+    .partner-logo img {
+        width: 155px;
+        height: 80px;
+    }
+
+    /* contact */
+    .contact-msg {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .contact-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 480px) {
+
+    /* header */
+    .header {
+        text-align: center;
+    }
+
+    .container, .phone {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .header > a {
+        display: inline-block;
+        height: 82px;
+        line-height: 116px;
+    }
+
+    .mb100 {
+        margin-bottom: 50px;
+    }
+
+    .range h1 {
+        font-size: 30px;
+    }
+
+    /* about */
+    .about-description {
+        position: static;
+        float: none;
+        width: 512px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .ab-title {
+        display: none;
+    }
+
+    .ab-detail {
+        padding-bottom: 20px;
+    }
+
+    .ab-btn {
+        margin-bottom: 40px;
+    }
+
+    .ab-box {
+        margin-left: -150px;
+    }
+
+    .ab-computer {
+        width: 300px;
+        height: 200px;
+    }
+
+    .ab-ipad {
+        width: 100px;
+        height: 66px;
+        left: -55px;
+    }
+
+    .ab-book {
+        width: 100px;
+        height: 100px;
+        left: 252px;
+    }
+
+    .ab-line {
+        display: none;
+    }
+
+    .scroll-box {
+        width: 276px;
+        height: 123px;
+        bottom: 70px;
+        left: 12px;
+    }
+
+    .ab-num {
+        width: 100%;
+    }
+
+    .ab-num .number {
+        font-size: 18px;
+    }
+
+    /* example */
+    .example {
+        height: 500px !important;
+    }
+
+    .table-cell > img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .table-cell .time {
+        font-size: 16px;
+    }
+
+    .table-cell .white,
+    .table-cell .more {
+        font-size: 12px;
+    }
+
+    /* lession */
+    .lession {
+        height: 500px !important;
+    }
+
+    .l-box {
+        height: 55%;
+    }
+
+    .l-title {
+        font-size: 20px;
+    }
+
+    .l-en {
+        padding-bottom: 34px;
+    }
+
+    .lession-img {
+        width: 150px;
+        height: 45%;
+    }
+
+    /* member */
+    .member .slogan {
+        font-size: 38px;
+    }
+
+    /* partner */
+    .partner {
+        height: 800px !important;
+    }
+
+    .partner-title {
+        height: 15%;
+    }
+
+    .partner-logo {
+        max-width: 520px;
+    }
+
+    .partner-logo img {
+        width: 130px;
+        height: 70px;
+    }
+
+    /* service */
+    .service {
+        height: 600px !important;
+    }
+
+    .service-title {
+        height: 15%;
+    }
+
+    .service-platform {
+        width: 100%;
+    }
+
+    .service-platform .item img {
+        width: 85px;
+        height: 60px;
+    }
+
+    .sd-title {
+        font-size: 14px;
+    }
+
+    .sd-txt {
+        padding: 25px 10px;
+    }
+
+    /* contact */
+    .contact-box {
+        width: 92%;
+    }
+
+    .contact-msg {
+        position: static;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .contact-block.inline {
+        width: 289px;
+    }
+
+    .contact-block.inline .contact-txt {
+        width: 183px;
+    }
+
+    .contact-txt {
+        width: 494px;
+    }
+
+    .contact-address {
+        width: 278px;
+    }
+}
+
+@media (max-width: 639px) and (min-width: 480px) {
+
+    /* about */
+    .about-description {
+        width: 400px;
+    }
+
+    .ab-num .item {
+        font-size: 12px;
+    }
+
+    /* example */
+    .example {
+        height: 900px !important;
+    }
+
+    .example-title {
+        height: 15%;
+    }
+
+    .example-items .box {
+        width: 50%;
+        height: 25%;
+    }
+
+    /* lession */
+    .lession {
+        height: 1000px !important;
+    }
+
+    .lession-title {
+        height: 12%;
+    }
+
+    .lession-items .item {
+        width: 100%;
+        height: 300px;
+    }
+
+    .lession-img {
+        width: 165px;
+        height: 55%;
+    }
+
+    .l-box {
+        height: 45%;
+    }
+
+    .l-title {
+        font-size: 18px;
+    }
+
+    .l-en {
+        padding-bottom: 10px;
+    }
+
+    .l-time {
+        font-size: 12px;
+    }
+
+    .show480 {
+        display: block;
+    }
+
+    .hide480 {
+        display: none;
+    }
+
+    /* mumber */
+    .member .slogan {
+        font-size: 26px;
+    }
+
+    /* service */
+    .service {
+        height: 1000px !important;
+    }
+
+    .service-title {
+        height: 12%;
+    }
+
+    .service-detail {
+        width: 95%;
+    }
+
+    .sd-item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .sd-txt {
+        padding: 25px 45px;
+    }
+
+    /* partner */
+    .partner {
+        height: 1000px !important;
+    }
+
+    .partner-title {
+        height: 12%;
+    }
+
+    .partner-logo {
+        max-width: 390px;
+    }
+
+    /* contact */
+    .contact-box {
+        width: 92%;
+    }
+
+    .contact-msg {
+        position: static;
+        width: 440px;
+        margin: 0 auto;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .contact-block.tel {
+        margin-left: 0;
+    }
+
+    .contact-block.inline {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-block.inline .contact-txt,
+    .contact-txt {
+        width: 334px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .contact-msg .mark {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-address,
+    .contact-qq {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+
+}

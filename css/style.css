@@ -1497,6 +1497,10 @@ li.first:hover:after {
     .service-title {
         height: 12%;
     }
+	
+    .service-body {
+        height: 70%;
+    }
 
     .service-detail {
         width: 95%;

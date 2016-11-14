@@ -1557,7 +1557,7 @@ li.first:hover:after {
         width: 100%;
     }
 
-    .contact-msg .mark {
+    .contact-submit .mark {
         display: inline-block;
         width: 100%;
         text-align: center;

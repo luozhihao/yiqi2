@@ -541,7 +541,8 @@ li.first:hover:after {
 .lession-img {
     display: block;
     height: 65%;
-    width: 312px;
+    width: 65%;
+    max-width: 431px;
 }
 
 .lession-img:hover {

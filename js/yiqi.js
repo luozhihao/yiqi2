@@ -14,6 +14,11 @@ $(function() {
     }, function() {
         $(this).parent().find('.l-box').removeClass('bounce animated');
     })
+
+    // 定时轮播
+    setInterval(function () {
+        $('.swiper-button-next').trigger('click');
+    }, 10000);
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {
@@ -33,6 +38,8 @@ $(function() {
         var h = $(window).height();
 
         $('.section').height(h < 700 ? 700 : h);
+
+        $('.banner .contents').height($('.section').height() - 81);
     })();
 
     // 数字跳动

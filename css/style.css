@@ -1484,6 +1484,10 @@ li.first:hover:after {
     }
 
     /* mumber */
+    .member {
+	background-attachment: scroll;
+    }
+	
     .member .slogan {
         font-size: 26px;
     }
@@ -1606,11 +1610,11 @@ li.first:hover:after {
     
     /* partner */
     .partner-logo {
-        max-width: 300px;
+        max-width: 280px
     }
 
     .partner-logo img {
-        width: 150px;
+        width: 140px;
         height: 70px;
         margin-bottom: -1px;
     }

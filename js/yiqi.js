@@ -138,16 +138,15 @@ $(function() {
         });
     })();
 
-    // 桌面晃动
+    // 桌面课程晃动
     (function () {
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    })();
+        if ($(window).width() >= 640) {
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
 
-    // 课程晃动
-    (function () {
-        var scene2 = document.getElementById('lession');
-        var parallax2 = new Parallax(scene2);
+            var scene2 = document.getElementById('lession');
+            var parallax2 = new Parallax(scene2);
+        }
     })();
 
     // 百度地图

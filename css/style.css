@@ -1303,12 +1303,12 @@ li.first:hover:after {
         height: 30px;
     }
 
-    .table-cell .time {
-        font-size: 16px;
-    }
-
     .table-cell .white,
     .table-cell .more {
+        font-size: 12px;
+    }
+
+    .table-cell .time {
         font-size: 12px;
     }
 

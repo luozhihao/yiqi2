@@ -1002,7 +1002,7 @@ li.first:hover:after {
 
 .btn-border {
     display: inline-block;
-    height: 43px;
+    height: 45px;
     border: 1px solid #fff;
     padding: 4px;
 }
@@ -1614,7 +1614,7 @@ li.first:hover:after {
     }
 
     .partner-logo img {
-        width: 140px;
+        width: 138px;
         height: 70px;
         margin-bottom: -1px;
     }

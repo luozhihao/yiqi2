@@ -26,7 +26,7 @@ $(function() {
                 right: '0px',
             }, 500);
         }
-    })
+    });
     
     // 鼠标移入课程图片效果
     $('.lession-img').hover(function() {
@@ -42,14 +42,19 @@ $(function() {
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {
-        var target = $(this).attr('data-target');
+        var target = $(this).attr('data-target'),
+            w = $(window).width();
 
         if (target) {
             e.preventDefault();
 
             var top = $('#' + target).offset().top;
 
-            $("html, body").animate({ scrollTop: top }, 500, 'swing');
+            if (w > 1023) {
+                $("html, body").animate({ scrollTop: top }, 500, 'swing');
+            } else {
+                $("html, body").animate({ scrollTop: top - 81 }, 500, 'swing');
+            }            
         }
     });
 

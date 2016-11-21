@@ -1255,7 +1255,6 @@ li.first:hover:after {
 
     .nav > li > a {
         float: none;
-        border-bottom: 1px solid #383838;
         font-size: 14px;
         margin: 0px;
         width: 124px;

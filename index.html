@@ -8,7 +8,7 @@
 	<title>绎奇官网</title>
 	<link rel="stylesheet" type="text/css" href="./css/base.css?v=201611170957">
 	<link rel="stylesheet" type="text/css" href="./css/swiper.css?v=201611170957">
-	<link rel="stylesheet" type="text/css" href="./css/style.css?v=201611171021">
+	<link rel="stylesheet" type="text/css" href="./css/style.css?v=201611211021">
 	<style type="text/css">
 		#l-map{height:100%;width:100%;}
 	</style>
@@ -656,7 +656,26 @@
 	</div>
 	
 	<script src="./js/core.min.js?v=201611170957"></script>
-	<script src="./js/yiqi.js?v=201611170957"></script>
+	<script src="./js/yiqi.js?v=201611210957"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=XjYb8I0LmkLSxb47eyDSSCtsYUInYn19"></script>
+	<script>
+
+		// 百度地图
+		(function () {
+
+		    // 百度地图API功能
+		    var sContent ="中央金地广场";
+		    var map = new BMap.Map("l-map");
+		    var point = new BMap.Point(118.77, 32);
+
+		    map.centerAndZoom(point, 10);
+
+		    var local = new BMap.LocalSearch(map, {
+		        renderOptions: {map: map, panel: "r-result"}
+		    });
+
+		    local.search("中央金地广场");
+		})();
+	</script>
 </body>
 </html>

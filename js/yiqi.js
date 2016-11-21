@@ -169,23 +169,6 @@ $(function() {
         }
     })();
 
-    // 百度地图
-    (function () {
-
-        // 百度地图API功能
-        var sContent ="中央金地广场";
-        var map = new BMap.Map("l-map");
-        var point = new BMap.Point(118.77, 32);
-
-        map.centerAndZoom(point, 10);
-
-        var local = new BMap.LocalSearch(map, {
-            renderOptions: {map: map, panel: "r-result"}
-        });
-
-        local.search("中央金地广场");
-    })();
-
     // 首页轮播
     (function() {
         /**

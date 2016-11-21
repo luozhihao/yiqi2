@@ -8,6 +8,26 @@ $(function() {
 
     // $('#fullpage').fullpage();
     
+    // 移动端导航效果
+    $(document).on('click', '.nav-btn', function() {
+        var e = $(this);
+
+        if (e.hasClass('btn-an')) {
+            e.removeClass('btn-an');
+
+            $('.nav').animate({
+                right: '-125px',
+            }, 500);
+
+        } else {
+            e.addClass('btn-an');
+
+            $('.nav').animate({
+                right: '0px',
+            }, 500);
+        }
+    })
+    
     // 鼠标移入课程图片效果
     $('.lession-img').hover(function() {
         $(this).parent().find('.l-box').addClass('bounce animated');

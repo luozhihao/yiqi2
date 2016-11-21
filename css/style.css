@@ -21,6 +21,29 @@
     top: 25px;
 }
 
+.nav-btn {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    width: 30px;
+    height: auto;
+    transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-an {
+    transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+}
+
 .container {
     position: relative;
     width: 740px;
@@ -381,7 +404,7 @@ li.first:hover:after {
 }
 
 .example-items .box {
-	position: relative;
+    position: relative;
     float: left;
     width: 25%;
     height: 50%;
@@ -396,7 +419,7 @@ li.first:hover:after {
 }
 
 .example-details {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -408,7 +431,7 @@ li.first:hover:after {
     -o-transform: scale(0.6, 0.8);
     transition: .38s all ease-in-out;
     background: rgba(39, 29, 27, 0.83);
-	text-align: center;
+    text-align: center;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
@@ -416,7 +439,7 @@ li.first:hover:after {
 }
 
 .example-details.table {
-	display: table;
+    display: table;
     width: 100%;
     height: 100%;
 }
@@ -427,40 +450,40 @@ li.first:hover:after {
 }
 
 .example-items .box:hover .example-details {
-	opacity: 1;
-	visibility: visible;
-	border-radius: 0;
-	transform: scale(1);
-	-webkit-transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    transform: scale(1);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
 }
 
 .example-details .time {
-	font-size: 22px;
+    font-size: 22px;
     font-weight: 600;
-	padding: 15px 0;
+    padding: 15px 0;
 }
 
 .example-details .line {
-	display: inline-block;
-	vertical-align: top;
-	width: 30px;
-	height: 1px;
-	background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
 }
 
 .example-details .more {
-	line-height: 20px;
+    line-height: 20px;
     font-weight: 400;
 } 
 
 .white {
-	color: #fff;
+    color: #fff;
 }
 
 .red {
-	color: red;
+    color: red;
 }
 
 .example-title {
@@ -595,8 +618,8 @@ li.first:hover:after {
 
 /* member */
 .member {
-    position: relative;
-    background: url("../images/member/member_bg.jpg") fixed;
+    background: url("../images/member/member_bg.jpg");
+    background-attachment: fixed;
     background-position: 50% 50%;
     background-size: cover;
     text-align: center;
@@ -1207,15 +1230,59 @@ li.first:hover:after {
 
     /* header */
     .header {
-        text-align: center;
+        position: fixed;
     }
 
     .container, .phone {
         display: none;
     }
 
+    .container {
+        display: block;
+    }
+
+    .nav {
+        display: block;
+        position: fixed;
+        top: 82px;
+        width: 124px;
+        height: 5035px;
+        right: -125px;
+        background: #1f1b1e;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .nav > li > a {
+        float: none;
+        border-bottom: 1px solid #383838;
+        font-size: 14px;
+        margin: 0px;
+        width: 124px;
+        height: 50px;
+        line-height: 50px;
+        color: #f1f1f1;
+    }
+
+    .nav > li > a:after {
+        display: none;
+    }
+
+    .nav > li:hover:before, 
+    .nav > li:hover:after {
+        display: none;
+    }
+
+    .nav > li:hover .second-nav {
+        display: none;
+    }
+
     .logo {
-        position: static;
+        left: 17px;
+    }
+
+    .nav-btn {
+        display: block;
     }
 
     .header > a {
@@ -1485,9 +1552,9 @@ li.first:hover:after {
 
     /* mumber */
     .member {
-	background-attachment: scroll;
+    background-attachment: scroll;
     }
-	
+    
     .member .slogan {
         font-size: 26px;
     }
@@ -1500,7 +1567,7 @@ li.first:hover:after {
     .service-title {
         height: 12%;
     }
-	
+    
     .service-body {
         height: 70%;
     }

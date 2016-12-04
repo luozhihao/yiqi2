@@ -1,0 +1,185 @@
+body {
+	background: url("../images/example_detail/bg.jpg") no-repeat;
+	background-position: center top;
+}
+
+.example-detail {
+	width: 100%;
+	margin-top: 82px;
+}
+
+.exd-box {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.exd-header {
+	padding: 100px 0 150px 185px;
+}
+
+.exd-title {
+	width: 703px;
+	height: 180px;
+}
+
+.exd-banner {
+	display: block;
+	width: 459px;
+	height: 50px;
+	margin: 5px 0 10px 0;
+}
+
+.exd-team-txt {
+	width: 698px;
+}
+
+.exd-team-txt p {
+	font-size: 14px;
+	color: #e1ce7b;
+	letter-spacing: 1px;
+	line-height: 28px;
+}
+
+.exd-img {
+	text-align: center;
+}
+
+.exd-project {
+	position: relative;
+	width: 925px;
+	padding: 10px 30px 30px;
+	margin: 100px auto 0;
+}
+
+.exd-project-bg2 {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #121212;
+}
+
+.exd-line {
+	position: absolute;
+	top: 0;
+}
+
+.exd-project-inner {
+	position: relative;
+	width: 860px;
+	margin: 0 auto;
+	padding: 25px;
+	border-radius: 5px;
+	background-color: #2f2e2e;
+	overflow: hidden;
+}
+
+.exd-project-name {
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	border: 6px solid #000;
+	border-radius: 3px;
+	background: #eb5f0d;
+	color: #fff;
+	text-align: center;
+	padding: 18px;
+	font-size: 24px;
+    line-height: 28px;
+}
+
+.exd-project-txt {
+	display: inline-block;
+	width: 480px;
+	height: 100px;
+	vertical-align: top;
+	padding: 0 50px 0 30px;
+	overflow: hidden;
+}
+
+.exd-project-txt h3 {
+	color: #fff;
+	font-size: 22px;
+    margin: 5px 0 14px;
+}
+
+.exd-project-txt p {
+	color: #b5b5b6;
+	line-height: 20px;
+}
+
+.exd-project-menu {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.exd-menu-txt {
+	padding: 15px 10px;
+	color: #f0eab1;
+	box-shadow: inset 0 0 5px #000, 0 0 5px #7b796c;
+	letter-spacing: 3px;
+}
+
+.exd-menu-btn {
+    padding: 8px 38px;
+    color: #403702;
+    letter-spacing: 4px;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 0;
+    margin-top: 15px;
+    background: linear-gradient(#f0f0c3 2%, #dede61 96%, #f0f0c3 2%);
+    cursor: pointer;
+}
+
+.exd-result {
+	width: 860px;
+	margin: 0 auto 40px;
+	padding: 45px 25px 40px;
+	background: #000;
+}
+
+.exd-result-title {
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.exd-result-txt {
+	position: relative;
+	color: #eb5f0d;
+	padding: 15px 25px 25px;
+	line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.exd-result-txt:before {
+	content: '“';
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	font-size: 44px;
+}
+
+.exd-result-txt:after {
+	content: '”';
+	position: absolute;
+	bottom: 0px;
+	right: -30px;
+	font-size: 44px;
+}
+
+.exd-result-img {
+	padding: 0 15px;
+}
+
+.exd-result-img li {
+	float: left;
+	margin-right: 8px;
+}
+
+.exd-result-img li.last {
+	margin-right: 0;
+}

@@ -1,0 +1,148 @@
+.example {
+	width: 100%;
+	margin-top: 82px;
+}
+
+.ex-nav {
+	width: 100%;
+	height: 85px;
+	background: #636163;
+	box-shadow: inset 0 1px 0 #a3a1a3, inset 0 2px 0 #7b7a7b, inset 0 -1px 0 #504e50, inset 0 -2px 0 #5d5b5d;
+}
+
+.ex-nav-menu {
+	width: 840px;
+	height: 85px;
+	margin: 0 auto;
+}
+
+.ex-nav-menu .menu {
+	float: left;
+	width: 280px;
+	height: 85px;
+	line-height: 85px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ex-nav-menu .menu.active {
+	color: #eb610f;
+}
+
+.ex-main {
+	width: 100%;
+	background: #e1e1e1;
+}
+
+.ex-main-box {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 60px 0 45px;
+}
+
+.ex-nav-tabs {
+	padding-left: 230px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #a4a4a4;
+}
+
+.ex-nav-tabs > li {
+	float: left;
+	margin: 0 5px -1px 0;
+}
+
+.ex-nav-tabs > li > a {
+	display: inline-block;
+	width: 180px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #636163;
+	border: 1px solid #a4a4a4;
+}
+
+.ex-nav-tabs > li.cur > a {
+	color: #636163;
+	background-color: #e1e1e1;
+	border-bottom-color: transparent;
+}
+
+.ex-tab-pane {
+	position: relative;
+}
+
+.ex-tab-list >li {
+	float: left;
+	margin: 0 10px 35px 0;
+	box-shadow: 0px 5px 5px #c9c9c9;
+}
+
+.ex-tab-list >li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.ex-tab-list >li > a {
+	display: inline-block;
+	width: 292px;
+	height: 230px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.ex-list-img {
+	width: 100%;
+	height: 165px;
+	background: #636163;
+}
+
+.ex-list-ft {
+	padding: 10px 20px;
+}
+
+.ex-list-ft .topic {
+	display: block;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+	color: #595757;
+	font-size: 13px;
+}
+
+.ex-list-ft .describition {
+	font-size: 12px;
+	color: #acacac;
+	line-height: 2;
+}
+
+.ex-pagination {
+	float: right;
+	margin-top: 10px;
+}
+
+.ex-pagination .prev,
+.ex-pagination .next {
+	font-size: 22px;
+    color: #a7a7b4;
+    cursor: pointer;
+}
+
+.ex-page {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.ex-page > li {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	font-size: 22px;
+    color: #a7a7b4;
+    cursor: pointer;
+}
+
+.ex-page > li.active {
+	color: #000;
+}

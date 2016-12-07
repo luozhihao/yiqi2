@@ -73,6 +73,21 @@
 
 .ex-tab-pane {
 	position: relative;
+	display: none;
+}
+
+.ex-tab-pane.active {
+	display: block;
+}
+
+.ex-tab,
+.ex-tab-list {
+	display: none;
+}
+
+.ex-tab.active,
+.ex-tab-list.active {
+	display: block;
 }
 
 .ex-tab-list >li {
@@ -97,6 +112,7 @@
 	width: 100%;
 	height: 165px;
 	background: #636163;
+	overflow: hidden;
 }
 
 .ex-list-ft {

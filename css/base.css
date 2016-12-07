@@ -327,6 +327,7 @@ li.first:hover:after {
     position: fixed;
     right: 40px;
     bottom: 80px;
+    cursor: pointer;
 }
 
 @media (max-width: 1439px) and (min-width: 1200px) {

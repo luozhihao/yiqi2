@@ -4,6 +4,11 @@
  * version: 1.0.0
  */
 
+.section {
+    height: 700px;
+    transition: all 1s;
+}
+
 /* banner */
 .banner {
     position: relative;

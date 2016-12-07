@@ -60,11 +60,23 @@ $(function() {
 
     // 计算满屏高度
     (function () {
-        var h = $(window).height();
+        var fullFn = function(full) {
+            $('.banner .contents').height(full - 81);
+        }
 
-        $('.section').height(h < 700 ? 700 : h);
+        function fullScreen (fullFn) {
+            var h = $(window).height();
 
-        $('.banner .contents').height($('.section').height() - 81);
+            $('.section').height(h < 700 ? 700 : h);
+
+            setTimeout(function() {
+                var full = $('.section').css('height');
+
+                fullFn(full);
+            }, 1000);
+        }
+
+        fullScreen(fullFn);
     })();
 
     // 数字跳动

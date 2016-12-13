@@ -243,7 +243,7 @@ li.first:hover:after {
 
 .footer-floor {
     width: 100%;
-    background: #1a1917 url("../images/footer/footer2.png") center top;
+    background: #171616;
 }
 
 .footer-top {
@@ -254,65 +254,99 @@ li.first:hover:after {
     color: #b2b2b2;
 }
 
-.footer-top .item1 {
-    display: inline-block;
-    width: 585px;
+.footer-top .item {
+    float: left;
+    height: 120px;
     overflow: hidden;
 }
 
-.footer-title {
-    color: #fff;
+.footer-top .item1 {
+    width: 340px;
+    line-height: 150px;
+    border-right: 1px solid #323232;
 }
 
-.footer-logo {
+.footer-top .item2 {
+    width: 396px;
+    padding: 0 45px 0 25px;
+    border-right: 1px solid #323232;
+    border-left: 1px solid #1a1a1a;
+}
+
+.footer-top .item3 {
+    padding-left: 25px;
+    border-left: 1px solid #1a1a1a;
+}
+
+.footer-title {
+    position: relative;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 28px;
+}
+
+.footer-title.copy:before {
     position: absolute;
-    top: 22px;
-    left: 85px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: url('../images/footer/copyright.png') no-repeat;
+}
+
+.footer-title.contact:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: url('../images/footer/tel.png') no-repeat;
 }
 
 .copyright {
     line-height: 20px;
     letter-spacing: 1px;
-    padding: 18px 0 20px;
-}
-
-.footer-top .item2 {
-    display: inline-block;
-    padding: 0 30px 0 160px;
-    vertical-align: top;
-    border-right: 2px solid #8b8a89;
-}
-
-.qrcode {
-    display: inline-block;
-    text-align: center;
-}
-
-.qrcode-txt {
-    line-height: 24px;
-}
-
-.qrcode.mr {
-    margin-right: 10px;
-}
-
-.footer-top .item3 {
-    display: inline-block;
-    padding-left: 30px;
-    vertical-align: top;
-}
-
-.footer-title .tel {
-    vertical-align: middle;
-    margin-right: 3px;
+    padding: 15px 0 15px;
 }
 
 .footer-contact {
     margin-top: 10px;
 }
 
-.footer-contact p {
-    line-height: 21px;
+.footer-contact > p {
+    line-height: 34px;
+}
+
+.footer-contact .address {
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #898989;
+}
+
+.footer-contact .address:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url('../images/footer/address.png') no-repeat;
+}
+
+.footer-contact .tel {
+    font-size: 16px;
+    color: #fcfcfc;
+}
+
+.footer-contact .mail {
+    font-size: 14px;
+    color: #eb5f0d;
 }
 
 .footer-bottom {

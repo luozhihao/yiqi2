@@ -1,0 +1,38 @@
+.lession {
+	width: 100%;
+	margin-top: 82px;
+	background: url('../images/lession_detail/bg.jpg') center top;
+}
+
+.le-header {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 115px 0 215px 0;
+	text-align: center;
+}
+
+.le-title,
+.le-subtitle {
+	display: block;
+	margin: 0 auto;
+}
+
+.le-subtitle {
+	margin: 30px auto;
+}
+
+.le-intro {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 75px 0 85px 0;
+	text-align: center;
+}
+
+.le-intro-img {
+	margin-bottom: 30px;
+}
+
+.le-intro > p {
+	color: #9f9f9f;
+	line-height: 24px;
+}

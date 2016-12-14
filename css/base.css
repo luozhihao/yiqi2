@@ -233,6 +233,7 @@ li.first:hover:after {
 
 /* footer */
 .footer {
+    position: relative;
     width: 100%;
 }
 
@@ -268,7 +269,7 @@ li.first:hover:after {
 }
 
 .footer-top .item2 {
-    width: 401px;
+    width: 403px;
     padding: 0 45px 0 25px;
     border-right: 1px solid #323232;
     border-left: 1px solid #1a1a1a;
@@ -337,7 +338,7 @@ li.first:hover:after {
 
 .copyright2:before {
     left: 3px;
-    top: 5px;
+    top: 3px;
 }
 
 .footer-contact {
@@ -366,11 +367,13 @@ li.first:hover:after {
 }
 
 .footer-contact .tel {
+    letter-spacing: 2px;
     font-size: 16px;
     color: #fcfcfc;
 }
 
 .footer-contact .mail {
+    letter-spacing: 2px;
     font-size: 14px;
     color: #eb5f0d;
 }

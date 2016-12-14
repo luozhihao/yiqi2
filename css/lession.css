@@ -4,6 +4,7 @@
 	background: url('../images/lession_detail/bg.jpg') center top;
 }
 
+/* 头部介绍 */
 .le-header {
 	width: 1200px;
 	margin: 0 auto;
@@ -21,6 +22,7 @@
 	margin: 30px auto;
 }
 
+/* 中部介绍 */
 .le-intro {
 	width: 1200px;
 	margin: 0 auto;
@@ -35,4 +37,127 @@
 .le-intro > p {
 	color: #9f9f9f;
 	line-height: 24px;
+}
+
+/* 课程介绍 */
+.le-lession {
+	position: relative;
+	width: 100%;
+	height: 935px;
+}
+
+.le-nav {
+	width: 215px;
+	height: 710px;
+	padding: 120px 65px 105px 0;
+	background: url('../images/lession_detail/le_nav.png') no-repeat;
+}
+
+.le-logo {
+	width: 100%;
+	text-align: right;
+}
+
+.le-navlist {
+	padding: 165px 0 125px;
+}
+
+.le-navlist > li {
+	color: #fff;
+	font-size: 16px;
+	padding-left: 60px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.le-navlist > li:hover {
+	background: #fff;
+	color: #eb610f;
+}
+
+.le-content {
+	position: absolute;
+	left: 278px;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: #4c4948;
+}
+
+.le-share {
+	padding-left: 60px;
+}
+
+.le-tel {
+	font-size: 16px;
+	color: #eb610f;
+	letter-spacing: 1px;
+}
+
+.le-share-box {
+	position: relative;
+	margin-top: 10px;
+}
+
+.le-share-item {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #eb610f;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.le-share-item:hover {
+	background-color: #fff;
+}
+
+.share-item {
+	width: 100px;
+	height: 30px;
+	background: #fff;
+	display: none;
+}
+
+.le-share-item.share {
+	top: 0;
+	left: 0;
+	background-image: url('../images/lession_detail/share_icon_1.png');
+}
+
+.le-share-item.share:hover {
+	background-image: url('../images/lession_detail/share_icon_active_1.png');
+}
+
+.le-share-item.im {
+	top: 0;
+	left: 42px;
+	background-image: url('../images/lession_detail/share_icon_2.png');
+}
+
+.le-share-item.im:hover {
+	background-image: url('../images/lession_detail/share_icon_active_2.png');
+}
+
+.le-share-item.weibo {
+	top: 42px;
+	left: 0;
+	background-image: url('../images/lession_detail/share_icon_3.png');
+}
+
+.le-share-item.weibo:hover {
+	background-image: url('../images/lession_detail/share_icon_active_3.png');
+}
+
+.le-share-item.wechart {
+	top: 42px;
+	left: 42px;
+	background-image: url('../images/lession_detail/share_icon_4.png');
+}
+
+.le-share-item.wechart:hover {
+	background-image: url('../images/lession_detail/share_icon_active_4.png');
 }

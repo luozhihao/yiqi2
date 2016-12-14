@@ -65,9 +65,16 @@ $(function() {
         }
 
         function fullScreen (fullFn) {
-            var h = $(window).height();
+            var h = $(window).height(),
+                $sect = $('.section');
 
-            $('.section').height(h < 700 ? 700 : h);
+            if (h < 700) {
+                $sect.height(700);
+            } else if (h > 1800) {
+                $sect.height(1800);
+            } else {
+                $sect.height(h);
+            }
 
             setTimeout(function() {
                 var full = $('.section').css('height');

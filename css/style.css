@@ -111,7 +111,6 @@
 .ab-btn {
     width: 110px;
     height: 30px;
-    line-height: 30px;
     background: #fff;
     border: 1px solid #e95f24;
     padding: 0;
@@ -146,7 +145,7 @@
 .ab-line {
     position: absolute;
     left: -270px;
-    bottom: 120px;
+    bottom: 85px;
     width: 320px;
     z-index: 3;
 }
@@ -507,14 +506,12 @@
 }
 
 .service-body {
-    display: table;
     width: 100%;
     height: 80%;
 }
 
 .service-box {
-    display: table-cell;
-    vertical-align: middle;
+    height: 100%;
 }
 
 .service-platform {
@@ -863,6 +860,7 @@
     color: #e95f24;
     text-align: center;
     font-weight: 600;
+    vertical-align: middle;
 }
 
 .btn:hover {
@@ -998,10 +996,10 @@
     }
 
     .scroll-box {
-        left: 17px;
-        bottom: 104px;
-        width: 366px;
-        height: 184px;
+        left: 16px;
+        bottom: 106px;
+        width: 368px;
+        height: 185px;
     }
 
     /* service */
@@ -1042,6 +1040,10 @@
 @media (max-width: 1023px) {
 
     /* about */
+    .about-wall {
+        height: 60%;
+    }
+
     .about-description {
         position: static;
         float: none;
@@ -1090,7 +1092,7 @@
     .scroll-box {
         width: 276px;
         height: 123px;
-        bottom: 70px;
+        bottom: 72px;
         left: 12px;
     }
 
@@ -1311,11 +1313,16 @@
     }
     
     .service-body {
-        height: 70%;
+        height: 88%;
+    }
+
+    .service-platform {
+        height: 25%;
     }
 
     .service-detail {
         width: 95%;
+        height: 75%;
     }
 
     .sd-item {
@@ -1392,6 +1399,10 @@
         width: 100%;
     }
 
+    .ab-detail .detail1 {
+        display: none;
+    }
+
     .ab-book,
     .ab-ipad {
         display: none;
@@ -1456,6 +1467,11 @@
 
     .service-item5 {
         left: 69%;
+    }
+
+    /* member */
+    .member .txt {
+        display: none;
     }
 
     /* contact */

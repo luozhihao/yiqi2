@@ -4,7 +4,8 @@ var vm = new Vue({
 	mounted: function() {
 		$('.my-slider').unslider({
 			autoplay: true,
-			arrows: false
+			arrows: false,
+			delay: 6000
 		});
 	}
 })

@@ -9,6 +9,7 @@
 	<meta content="yes" name="apple-touch-fullscreen">
 	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
 	<title>培训课程</title>
+	<link rel="stylesheet" type="text/css" href="./css/unslider.css?v=201611170957">
 	<link rel="stylesheet" type="text/css" href="./css/base.css?v=201611170957">
 	<link rel="stylesheet" type="text/css" href="./css/lession.css?v=201611170957">
 </head>
@@ -74,13 +75,13 @@
 			<p>开展了数十场内容丰富，专题明确的线下实训课程</p>
 		</div>
 		<!-- 课程介绍 -->
-		<div class="le-lession">
+		<div id="lession" class="le-lession">
 			<div class="le-nav">
 				<div class="le-logo">
 					<img src="./images/lession_detail/le_nav_logo.png">
 				</div>
 				<ul class="le-navlist">
-					<li>企业高级内训</li>
+					<li class="active">企业高级内训</li>
 					<li>精品课程</li>
 					<li>线下精英特训营</li>
 					<li>公益演讲</li>
@@ -98,7 +99,82 @@
 				</div>
 			</div>
 			<div class="le-content">
-
+				<div class="my-slider slide">
+					<ul>
+						<li class="clearfix unslide">
+							<div class="slide-wripe">
+								<div class="slide-left">
+									<img src="./images/lession_detail/content_slide_logo_1.png">
+									<div class="slide-banner">
+										<h3 class="name">东风日产 & 绎奇</h3>
+										<span class="theme">确定战略合作关系</span>
+									</div>
+									<p class="txt">
+										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
+									</p>
+									<p class="txt">
+										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+									</p>
+									<div class="slide-menu-txt">
+										我的需求与此项目类似
+									</div>
+									<button type="button" class="slide-btn">咨询服务</button>
+								</div>
+								<div class="slide-right">
+									<img src="./images/lession_detail/content_slide_1.jpg" height="934" width="100%">
+								</div>
+							</div>
+						</li>
+						<li class="clearfix unslide">
+							<div class="slide-wripe">
+								<div class="slide-left">
+									<img src="./images/lession_detail/content_slide_logo_2.png">
+									<div class="slide-banner">
+										<h3 class="name">中国平安 & 绎奇</h3>
+										<span class="theme">确定战略合作关系</span>
+									</div>
+									<p class="txt">
+										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
+									</p>
+									<p class="txt">
+										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+									</p>
+									<div class="slide-menu-txt">
+										我的需求与此项目类似
+									</div>
+									<button type="button" class="slide-btn">咨询服务</button>
+								</div>
+								<div class="slide-right">
+									<img src="./images/lession_detail/content_slide_2.jpg" height="934" width="100%">
+								</div>
+							</div>
+						</li>
+						<li class="clearfix unslide">
+							<div class="slide-wripe">
+								<div class="slide-left">
+									<img src="./images/lession_detail/content_slide_logo_3.png">
+									<div class="slide-banner">
+										<h3 class="name">清华大学 & 绎奇</h3>
+										<span class="theme">确定战略合作关系</span>
+									</div>
+									<p class="txt">
+										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
+									</p>
+									<p class="txt">
+										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+									</p>
+									<div class="slide-menu-txt">
+										我的需求与此项目类似
+									</div>
+									<button type="button" class="slide-btn">咨询服务</button>
+								</div>
+								<div class="slide-right">
+									<img src="./images/lession_detail/content_slide_3.jpg" height="934" width="100%">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -133,6 +209,8 @@
 		</div>
 	</div>
 	<script src="./js/plugin/vue.js?v=201612142055"></script>
+	<script src="./js/plugin/jquery.min.js?v=201612142055"></script>
+	<script src="./js/plugin/unslider-min.js"></script>
 	<script src="./js/lession.js?v=201612142055"></script>
 </body>
 </html>

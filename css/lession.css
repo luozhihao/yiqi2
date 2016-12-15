@@ -1,7 +1,7 @@
 .lession {
 	width: 100%;
 	margin-top: 82px;
-	background: url('../images/lession_detail/bg.jpg') center top;
+	background: #000 url('../images/lession_detail/bg.jpg') center top no-repeat;
 }
 
 /* 头部介绍 */
@@ -44,6 +44,8 @@
 	position: relative;
 	width: 100%;
 	height: 935px;
+    max-width: 1925px;
+    margin: 0 auto;
 }
 
 .le-nav {
@@ -71,7 +73,8 @@
 	transition: all .5s;
 }
 
-.le-navlist > li:hover {
+.le-navlist > li:hover,
+.le-navlist > li.active {
 	background: #fff;
 	color: #eb610f;
 }
@@ -82,7 +85,6 @@
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background: #4c4948;
 }
 
 .le-share {
@@ -160,4 +162,110 @@
 
 .le-share-item.wechart:hover {
 	background-image: url('../images/lession_detail/share_icon_active_4.png');
+}
+
+/* 课程内容 */
+.le-content .slide {
+	width: 100%;
+	height: 935px;
+}
+
+.unslide {
+	overflow: auto;
+}
+
+.slide-wripe {
+	min-width: 1928px;
+    height: 935px;
+}
+
+.slide-left {
+	position: relative;
+	float: left;
+	width: 260px;
+	height: 685px;
+	padding: 250px 70px 0;
+	text-align: center;
+	background: #4c4948;
+}
+
+.slide-right {
+	float: left;
+	width: 1250px;
+	height: 935px;
+}
+
+.slide-banner {
+	position: relative;
+    top: -28px;
+	width: 100%;
+	height: 85px;
+	padding-top: 40px;
+	background: url('../images/lession_detail/content_border.png') no-repeat center center;
+}
+
+.slide-banner .name {
+	color: #eb610f;
+	font-size: 35px;
+}
+
+.slide-banner .theme {
+	color: #eb610f;
+	font-size: 20px;
+	line-height: 42px;
+}
+
+.slide-left .txt {
+	text-align: left;
+	color: #dcdddd;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+.slide-menu-txt {
+	width: 170px;
+	margin: 0 auto;
+	padding: 15px 10px;
+	margin: 50px auto 10px;
+	color: #eb610f;
+	font-size: 14px;
+	border-radius: 3px;
+	box-shadow: inset 0 0 5px #000, 0 0 5px #7b796c;
+	letter-spacing: 3px;
+	background: #212020;
+}
+
+.slide-btn {
+	width: 188px;
+	line-height: 32px;
+	color: #fff;
+	font-size: 24px;
+	background: linear-gradient(#e9800f, #b94708);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.unslider-nav {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+}
+
+.unslider-nav ol {
+	position: absolute;
+	width: 100px;
+	right: 300px;
+}
+
+.unslider-nav ol li {
+	width: 8px;
+	height: 8px;
+	margin: 0 8px;
+	background: #8b3700;
+	border: none;
+}
+
+.unslider-nav ol li.unslider-active {
+	background: #eb610f;
 }

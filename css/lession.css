@@ -1,7 +1,7 @@
 .lession {
 	width: 100%;
 	margin-top: 82px;
-	background: #000 url('../images/lession_detail/bg.jpg') center top no-repeat;
+	background: #fff url('../images/lession_detail/bg.jpg') center top no-repeat;
 }
 
 /* 头部介绍 */
@@ -46,6 +46,7 @@
 	height: 935px;
     max-width: 1925px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .le-nav {
@@ -171,7 +172,9 @@
 }
 
 .unslide {
-	overflow: auto;
+	height: 930px;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .slide-wripe {
@@ -200,19 +203,20 @@
     top: -28px;
 	width: 100%;
 	height: 85px;
-	padding-top: 40px;
-	background: url('../images/lession_detail/content_border.png') no-repeat center center;
+	padding-top: 35px;
+	background: url('../images/lession_detail/content_border.png') no-repeat;
+	background-position: 50% 11px;
 }
 
 .slide-banner .name {
 	color: #eb610f;
-	font-size: 35px;
+	font-size: 34px;
 }
 
 .slide-banner .theme {
 	color: #eb610f;
 	font-size: 20px;
-	line-height: 42px;
+	line-height: 36px;
 }
 
 .slide-left .txt {

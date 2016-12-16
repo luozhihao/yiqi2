@@ -3,7 +3,8 @@ html {
     font-size: 14px;
     background: #fff;
     width: 100%;
-    margin: 0px;
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 0px;
     font-family: "Microsoft YaHei", sans-serif, Arial;
     overflow-x: hidden;
@@ -80,6 +81,7 @@ textarea:focus {
     position: absolute;
     top: 0;
     width: 100%;
+    max-width: 1920px;
     height: 82px;
     background: #1f1b1e;
     z-index: 5;

@@ -282,6 +282,11 @@
 	background: #4c4948;
 }
 
+.course-box {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .course-top {
 	float: left;
 	width: 49%;

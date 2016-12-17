@@ -81,12 +81,7 @@
 					<img src="./images/lession_detail/le_nav_logo.png">
 				</div>
 				<ul class="le-navlist">
-					<li class="active">企业高级内训</li>
-					<li>精品课程</li>
-					<li>线下精英特训营</li>
-					<li>公益演讲</li>
-					<li>名师阵容</li>
-					<li>绎奇动态</li>
+					<li v-for="(list, index) in lists" v-text="list" :class="{active: active === index + 1}" @click="isActive(index)"></li>
 				</ul>
 				<div class="le-share">
 					<span class="le-tel">025-82366489</span>
@@ -99,7 +94,7 @@
 				</div>
 			</div>
 			<div class="le-content"> 
-				<div class="my-slider content hide">
+				<div class="my-slider content" v-show="active === 1">
 					<ul>
 						<li class="clearfix unslide">
 							<div class="slide-wripe">
@@ -175,22 +170,36 @@
 						</li>
 					</ul>
 				</div>
-				<div class="course content">
-					<div class="course-top course1 mr2">
-						
+				<div class="course content" v-show="active === 2">
+					<div class="course-box clearfix">
+						<div class="course-top course1 mr2">
+							
+						</div>
+						<div class="course-top course2">
+							
+						</div>
+						<div class="course-bottom course3 mr2">
+							
+						</div>
+						<div class="course-bottom course4 mr2">
+							
+						</div>
+						<div class="course-bottom course5">
+							
+						</div>
 					</div>
-					<div class="course-top course2">
-						
-					</div>
-					<div class="course-bottom course3 mr2">
-						
-					</div>
-					<div class="course-bottom course4 mr2">
-						
-					</div>
-					<div class="course-bottom course5">
-						
-					</div>
+				</div>
+				<div class="content" v-show="active === 3">
+					
+				</div>
+				<div class="content" v-show="active === 4">
+					
+				</div>
+				<div class="content" v-show="active === 5">
+					
+				</div>
+				<div class="content" v-show="active === 6">
+					
 				</div>
 			</div>
 		</div>

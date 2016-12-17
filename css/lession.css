@@ -84,8 +84,8 @@
 	position: absolute;
 	left: 278px;
 	top: 0;
+	right: 0;
 	bottom: 0;
-	width: 100%;
 }
 
 .le-share {
@@ -165,12 +165,13 @@
 	background-image: url('../images/lession_detail/share_icon_active_4.png');
 }
 
-/* 课程内容 */
-.le-content .slide {
+.le-content .content {
 	width: 100%;
 	height: 935px;
 }
 
+/* 课程内容 */
+/* 企业高级内训 */
 .unslide {
 	height: 930px;
 	overflow-x: auto;
@@ -178,7 +179,7 @@
 }
 
 .slide-wripe {
-	min-width: 1928px;
+	min-width: 1650px;
     height: 935px;
 }
 
@@ -258,8 +259,7 @@
 
 .unslider-nav ol {
 	position: absolute;
-	width: 100px;
-	right: 300px;
+	right: 50px;
 }
 
 .unslider-nav ol li {
@@ -272,4 +272,51 @@
 
 .unslider-nav ol li.unslider-active {
 	background: #eb610f;
+}
+
+/* 精品课程 */
+.le-content .course {
+	width: 92%;
+	height: 695px;
+	padding: 140px 4% 100px;
+	background: #4c4948;
+}
+
+.course-top {
+	float: left;
+	width: 49%;
+	height: 370px;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+
+.course-bottom {
+	float: left;
+	width: 32%;
+	height: 305px;
+	background-repeat: no-repeat;
+}
+
+.course .mr2 {
+	margin-right: 2%;
+}
+
+.course .course1 {
+	background-image: url('../images/lession_detail/content2/content2_1.jpg');
+}
+
+.course .course2 {
+	background-image: url('../images/lession_detail/content2/content2_2.jpg');
+}
+
+.course .course3 {
+	background-image: url('../images/lession_detail/content2/content2_3.jpg');
+}
+
+.course .course4 {
+	background-image: url('../images/lession_detail/content2/content2_4.jpg');
+}
+
+.course .course5 {
+	background-image: url('../images/lession_detail/content2/content2_5.jpg');
 }

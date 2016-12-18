@@ -245,7 +245,7 @@
 	line-height: 32px;
 	color: #fff;
 	font-size: 24px;
-	background: linear-gradient(#e9800f, #b94708);
+	background: linear-gradient(#f29128, #c16735);
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -280,26 +280,129 @@
 	height: 695px;
 	padding: 140px 4% 100px;
 	background: #4c4948;
+	overflow: auto;
 }
 
 .course-box {
 	max-width: 1440px;
+	min-width: 1000px;
 	margin: 0 auto;
 }
 
 .course-top {
+	position: relative;
 	float: left;
 	width: 49%;
 	height: 370px;
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
+	text-align: center;
+}
+
+.course1 .computer {
+	position: absolute;
+	left: 50%;
+	top: -40px;
+	width: 440px;
+	height: 305px;
+	margin-left: -220px;
+}
+
+.course1 .intro {
+	padding-top: 238px;
+}
+
+.intro .title {
+	color: #fff;
+	font-size: 17px;
+	line-height: 35px;
+	letter-spacing: 1px;
+}
+
+.intro .txt-box {
+	padding-bottom: 25px
+}
+
+.intro .mark {
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.intro .border {
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background: #ccc;
+	vertical-align: middle;
+}
+
+.course2 {
+	overflow: hidden;
+}
+
+.course2 .word {
+	position: absolute;
+	left: 35px;
+	top: 100px;
+	width: 260px;
+}
+
+.course2 .man {
+	position: absolute;
+	right: -15px;
+	top: 87px;
+	width: 260px;
+}
+
+.course2 .btns {
+	position: absolute;
+	left: 32px;
+	bottom: 41px;
 }
 
 .course-bottom {
+	display: table;
 	float: left;
 	width: 32%;
 	height: 305px;
 	background-repeat: no-repeat;
+}
+
+.course-bottom .cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.course-box .btn {
+	font-size: 16px;
+	color: #eb610f;
+	background: #1d2227;
+	border: 1px solid #675228;
+	padding: 7px 25px;
+	cursor: pointer;
+}
+
+.cell .txt1 {
+	color: #babcbc;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.cell .txt2 {
+	line-height: 60px;
+	color: #e7d7ac;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.cell .circle {
+	display: block;
+	height: 12px;
+	line-height: 0px;
+	font-size: 24px;
+    color: #d3be91;
 }
 
 .course .mr2 {
@@ -324,4 +427,74 @@
 
 .course .course5 {
 	background-image: url('../images/lession_detail/content2/content2_5.jpg');
+}
+
+/* 公益演讲 */
+.le-content .speeking {
+	position: relative;
+	width: 100%;
+	height: 935px;
+	background: #999898 radial-gradient(circle at center, #999898, #454242);
+	overflow: hidden;
+}
+
+.speeking .free {
+	position: absolute;
+	top: 70px;
+	left: 150px;
+	z-index: 2;
+}
+
+.speeking .layer {
+	position: absolute;
+	bottom: 0;
+	width: 110%;
+	min-width: 1000px;
+	height: 900px;
+}
+
+/* 线下精英特训营 */
+.le-content .training {
+	width: 92%;
+	height: 620px;
+	padding: 190px 4% 125px;
+	background: #3c3b3c;
+	overflow: auto;
+}
+
+.training-box {
+	max-width: 1440px;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+
+.training .left {
+	float: left;
+	width: 70%;
+}
+
+.training .right {
+	float: left;
+    width: 19%;
+    height: 465px;
+    background: #060606;
+    margin-left: 8px;
+    padding: 80px 50px 55px;
+}
+
+.training .right > p {
+	font-size: 12px;
+	color: #b5b5b6;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+.training .photos {
+	width: 100%;
+	height: 600px;
+}
+
+.training .call {
+	margin-top: -20px;
+	text-align: center;
 }

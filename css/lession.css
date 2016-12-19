@@ -168,6 +168,8 @@
 .le-content .content {
 	width: 100%;
 	height: 935px;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 /* 课程内容 */
@@ -280,7 +282,6 @@
 	height: 695px;
 	padding: 140px 4% 100px;
 	background: #4c4948;
-	overflow: auto;
 }
 
 .course-box {
@@ -304,12 +305,12 @@
 	left: 50%;
 	top: -40px;
 	width: 440px;
-	height: 305px;
+	height: 270px;
 	margin-left: -220px;
 }
 
 .course1 .intro {
-	padding-top: 238px;
+	padding-top: 210px;
 }
 
 .intro .title {
@@ -376,6 +377,7 @@
 }
 
 .course-box .btn {
+	display: inline-block;
 	font-size: 16px;
 	color: #eb610f;
 	background: #1d2227;
@@ -459,7 +461,6 @@
 	height: 620px;
 	padding: 190px 4% 125px;
 	background: #3c3b3c;
-	overflow: auto;
 }
 
 .training-box {

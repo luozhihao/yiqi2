@@ -1041,7 +1041,7 @@
 
     /* about */
     .about-wall {
-        height: 60%;
+        height: 70%;
     }
 
     .about-description {
@@ -1050,10 +1050,6 @@
         width: 512px;
         text-align: center;
         margin: 0 auto;
-    }
-
-    .ab-title {
-        display: none;
     }
 
     .ab-detail {

@@ -499,3 +499,200 @@
 	margin-top: -20px;
 	text-align: center;
 }
+
+/* 名师阵容 */
+.le-content .teacher {
+	width: 92%;
+	height: 680px;
+	padding: 130px 4% 125px;
+	background: url('../images/lession_detail/content5/bg.jpg') center center no-repeat;
+}
+
+.teacher-box {
+	max-width: 1440px;
+	min-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title-box .title {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	color: #fff;
+	font-size: 52px;
+	background: transparent;
+}
+
+.title-box .caption {
+	position: relative;
+}
+
+.title-box .line {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	height: 1px;
+	background: #727171;
+}
+
+.sub-title {
+	display: block;
+	font-size: 24px;
+	color: #c9caca;
+	word-spacing: 5px;
+	padding: 20px 0 100px;
+}
+
+.teacher-list > li {
+	float: left;
+	width: 33.3333%;
+}
+
+.teacher-list .face {
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	border: 5px solid #84848a;
+	margin: 0 auto;
+}
+
+.face1 {
+	background: url('../images/lession_detail/content5/face1.png') center center no-repeat;
+}
+
+.face2 {
+	background: url('../images/lession_detail/content5/face2.png') center center no-repeat;
+}
+
+.face3 {
+	background: url('../images/lession_detail/content5/face3.png') center center no-repeat;
+}
+
+.teacher .call {
+	margin-top: 45px;
+}
+
+.teacher .name {
+	font-size: 24px;
+	color: #fff;
+}
+
+.teacher .honor {
+	font-size: 14px;
+	color: #fff;
+}
+
+.split {
+	display: inline-block;
+	width: 45px;
+	height: 1px;
+	background: #b5b5b6;
+	margin: 10px 0 7px;
+}
+
+.teacher .intro {
+	width: 240px;
+	line-height: 22px;
+	margin: 0 auto;
+	color: #b5b5b6;
+    font-size: 14px;
+}
+
+/* 绎奇动态 */
+.le-content .news {
+	width: 92%;
+	height: 720px;
+	padding: 130px 4% 85px;
+	background: #3c3b3c;
+}
+
+.news-box {
+	max-width: 1440px;
+	min-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.news-box .sub-title {
+	padding: 20px 0 40px;
+}
+
+.news-list {
+	width: 85%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.news-list img {
+	vertical-align: bottom;
+}
+
+.news-list > li {
+	position: relative;
+	width: 100%;
+	border-bottom: 2px solid #727171;
+	margin-bottom: 15px;
+}
+
+.news-list h3 {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.news-list .contents {
+	position: absolute;
+	top: 0;
+	left: 220px;
+	bottom: 25px;
+	padding: 30px 0 0;
+	overflow: hidden;
+}
+
+.news-list .txt {
+	color: #9fa0a0;
+	line-height: 20px;
+}
+
+.news-list .time {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 150px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 20px;
+	color: #fff;
+	background: #eb610f;
+	text-align: center;
+}
+
+.pagination {
+	margin: 40px auto 0;
+}
+
+.pagination .prev,
+.pagination .next {
+	font-size: 14px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.pagination .page {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.pagination .page > li {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	font-size: 14px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.pagination .page > li.active {
+	color: #d1d1d1;
+}

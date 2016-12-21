@@ -258,38 +258,18 @@
 						</div>
 						<span class="sub-title">OUR KEY EMPLOYEES</span>
 						<ul class="teacher-list clearfix">
-							<li>
-								<div class="face face1"></div>
+							<li v-for="(teacher, index) in teachers" @mouseenter="addflip(index)" :class="{flipInY: teacher.flipInY, animated: true}">
+								<div class="face face1">
+									<img :src="'./images/lession_detail/content5/face' + parseInt(index + 1) + '.png'" >
+								</div>
 								<div class="call">
-									<span class="name">陆长淼</span>
+									<span class="name" v-text="teacher.name"></span>
 									&nbsp;
-									<span class="honor">金牌讲师</span>
+									<span class="honor" v-text="teacher.honor"></span>
 								</div>
 								<span class="split"></span>
-								<p class="intro">绎奇传媒设计总监</p>
-								<p class="intro">精通版式设计、配色设计、动画制作等，累计PPT设计达2000多页，积累了大量的行业经验</p>
-							</li>
-							<li>
-								<div class="face face2"></div>
-								<div class="call">
-									<span class="name">胡必洋</span>
-									&nbsp;
-									<span class="honor">资深讲师</span>
-								</div>
-								<span class="split"></span>
-								<p class="intro">绎奇传媒设计总监</p>
-								<p class="intro">精通版式设计、配色设计、动画制作等，累计PPT设计达2000多页，积累了大量的行业经验</p>
-							</li>
-							<li>
-								<div class="face face3"></div>
-								<div class="call">
-									<span class="name">彭祥和</span>
-									&nbsp;
-									<span class="honor">资深讲师</span>
-								</div>
-								<span class="split"></span>
-								<p class="intro">绎奇传媒设计总监</p>
-								<p class="intro">精通版式设计、配色设计、动画制作等，累计PPT设计达2000多页，积累了大量的行业经验</p>
+								<p class="intro" v-text="teacher.leader"></p>
+								<p class="intro" v-text="teacher.intro"></p>
 							</li>
 						</ul>
 					</div>

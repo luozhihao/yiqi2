@@ -202,6 +202,10 @@
     border-style: dashed solid dashed dashed;
 }
 
+.le-share-item {
+	border-right: 2px solid #252626;
+}
+
 .le-share-item.share {
 	top: 0;
 	left: 0;

@@ -36,6 +36,21 @@ var vm = new Vue({
 		// 图片晃动
 		var scene = document.getElementById('speeking');
 		var parallax = new Parallax(scene);
+
+		// 分享动画
+		$('.le-share-item').hover(function() {
+			var box = $(this).find('.box');
+
+			box.stop().animate({
+				width: box.attr('data-width')
+			}, 200);
+		}, function() {
+			var box = $(this).find('.box');
+
+			box.stop().animate({
+				width: 0
+			}, 200);
+		})
 	},
 	methods: {
 
@@ -46,11 +61,16 @@ var vm = new Vue({
 
 		// 添加动画
 		addflip: function(index) {
+			this.clearflip();
+
+			this.teachers[index].flipInY = true;
+		},
+
+		// 清空动画
+		clearflip: function() {
 			this.teachers.forEach(function(e, i) {
 				e.flipInY = false;
 			});
-
-			this.teachers[index].flipInY = true;
 		}
 	},
 	watch: {
@@ -59,6 +79,10 @@ var vm = new Vue({
 				$('.unslider-nav').addClass('hide');
 			} else {
 				$('.unslider-nav').removeClass('hide');
+			}
+
+			if (val === 5) {
+				this.clearflip();
 			}
 		}
 	}

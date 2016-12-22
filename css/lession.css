@@ -118,11 +118,88 @@
 	background-color: #fff;
 }
 
-.share-item {
-	width: 100px;
-	height: 30px;
+.share-box {
+	position: relative;
+	right: -42px;
+	width: 0;
+	height: 40px;
 	background: #fff;
-	display: none;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.share-big-box {
+	position: relative;
+	top: -55px;
+	right: -42px;
+	width: 0;
+	height: 95px;
+	background: #fff;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.share-big-box .qrcode {
+	display: inline-block;
+	width: 98px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.share-box .wechat {
+	position: absolute;
+	left: 17px;
+	top: 10px;
+}
+
+.share-box .weibo {
+	position: absolute;
+	left: 45px;
+	top: 10px;
+}
+
+.share-box .qme {
+	display: inline-block;
+	width: 100%;
+    text-align: center;
+    color: #eb610f;
+    line-height: 40px;
+    font-size: 14px;
+    text-indent: 6px;
+}
+
+.share-focus {
+	display: inline-block;
+	width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #eb610f;
+}
+
+.share-focus > a,
+.share-focus img {
+	vertical-align: middle;
+}
+
+.share-border {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 40px;
+	background: #eb610f;
+}
+
+.triangle {
+	position: absolute;
+	left: -1px;
+	top: 16px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+    border-left-width: 3px;
+    border-color: transparent #fff transparent transparent;
+    border-style: dashed solid dashed dashed;
 }
 
 .le-share-item.share {

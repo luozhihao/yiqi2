@@ -474,6 +474,7 @@ li.first:hover:after {
 
     .container {
         display: block;
+        height: 0;
     }
 
     .nav {

@@ -162,3 +162,67 @@
 .ex-page > li.active {
 	color: #000;
 }
+
+@media (max-width: 1199px) and (min-width: 920px) {
+	.ex-main-box {
+		width: 920px;
+	}
+
+	.ex-nav-tabs {
+		padding-left: 85px;
+	}
+
+	.ex-tab-list >li:nth-child(4n) {
+		margin: 0 10px 35px 0;
+	}
+}
+
+@media (max-width: 920px) {
+	.ex-nav-menu {
+		width: 100%;
+	}
+
+	.ex-nav-menu .menu {
+		width: 33.3333%;
+	}
+
+	.ex-main-box {
+		width: 100%;
+	}
+}
+
+@media (max-width: 919px) and (min-width: 640px) {
+	.ex-nav-tabs {
+		width: 619px;
+    	margin: 0 auto 40px;
+		padding-left: 0;
+	}
+
+	.ex-nav-tabs > li > a {
+		width: 147px;
+	}
+
+	.ex-tab-list {
+		width: 605px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 639px) {
+	.ex-nav-tabs {
+		width: 374px;
+    	margin: 0 auto 40px;
+    	padding-left: 0;
+	}
+
+	.ex-tab-list {
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 380px) { 
+	.ex-nav-tabs {
+		width: 182px;
+	}
+}

@@ -71,6 +71,32 @@ var vm = new Vue({
 			this.teachers.forEach(function(e, i) {
 				e.flipInY = false;
 			});
+		},
+
+		// 电脑屏幕切换
+		moveScreen: function() {
+			var obj = $('.course-scroll .scroll'),
+				len = obj.find('li').length,
+				i = 1,
+				time = null;
+
+			clearInterval(time);
+
+			time = setInterval(function () {
+				if (i <= len - 1) {
+					obj.stop().animate({
+						top: (-185 * i) + 'px'
+					}, 800);
+				} else {
+					i = 0;
+
+					obj.stop().animate({
+						top: '0px'
+					}, 800);
+				}
+
+				i++;
+			}, 4000);
 		}
 	},
 	watch: {
@@ -79,6 +105,10 @@ var vm = new Vue({
 				$('.unslider-nav').addClass('hide');
 			} else {
 				$('.unslider-nav').removeClass('hide');
+			}
+
+			if (val === 2) {
+				this.moveScreen();
 			}
 
 			if (val === 5) {

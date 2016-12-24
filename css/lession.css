@@ -141,9 +141,13 @@
 
 .share-big-box .qrcode {
 	display: inline-block;
-	width: 98px;
+	width: 97px;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.qrcode p {
+	line-height: 10px;
 }
 
 .share-box .wechat {
@@ -388,6 +392,34 @@
 	width: 440px;
 	height: 270px;
 	margin-left: -220px;
+	background: url('../images/lession_detail/content2/content2_computer.png') center center no-repeat;
+	background-size: cover;
+}
+
+.course-scroll {
+	position: absolute;
+	top: 16px;
+	left: 78px;
+    width: 285px;
+    height: 185px;
+    overflow: hidden;
+}
+
+.course-scroll .scroll {
+	position: absolute;
+	top: 0;
+}
+
+.course-scroll img {
+	width: 285px;
+    height: 185px;
+}
+
+.course-scroll .scroll > li {
+	width: 285px;
+	height: 185px;
+	background: red;
+	overflow: hidden;
 }
 
 .course1 .intro {
@@ -402,7 +434,7 @@
 }
 
 .intro .txt-box {
-	padding-bottom: 25px
+	padding-bottom: 37px
 }
 
 .intro .mark {

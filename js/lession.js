@@ -51,6 +51,8 @@ var vm = new Vue({
 				width: 0
 			}, 200);
 		})
+
+		this.moveScreen();
 	},
 	methods: {
 
@@ -105,10 +107,6 @@ var vm = new Vue({
 				$('.unslider-nav').addClass('hide');
 			} else {
 				$('.unslider-nav').removeClass('hide');
-			}
-
-			if (val === 2) {
-				this.moveScreen();
 			}
 
 			if (val === 5) {

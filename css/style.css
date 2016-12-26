@@ -661,7 +661,6 @@
     position: relative;
     background: url("../images/contact/contact_bg.jpg");
     background-position: center top;
-    background-size: cover;
 }
 
 .contact-title {

@@ -163,6 +163,13 @@
 	color: #000;
 }
 
+@media (max-width: 1199px) {
+	.ex-pagination {
+		float: none;
+		text-align: center;
+	}
+}
+
 @media (max-width: 1199px) and (min-width: 920px) {
 	.ex-main-box {
 		width: 920px;
@@ -218,6 +225,10 @@
 	.ex-tab-list {
 		width: 300px;
 		margin: 0 auto;
+	}
+
+	.go-top {
+		right: 15px;
 	}
 }
 

@@ -1,5 +1,5 @@
 body {
-	background: url("../images/example_detail/bg.jpg") no-repeat;
+	background: #181715 url("../images/example_detail/bg.jpg") no-repeat;
 	background-position: center top;
 }
 
@@ -173,13 +173,117 @@ body {
 
 .exd-result-img {
 	padding: 0 15px;
+	text-align: center;
 }
 
 .exd-result-img li {
-	float: left;
+	display: inline-block;
 	margin-right: 8px;
+	vertical-align: middle;
+	width: 180px;
+    margin-bottom: 8px;
 }
 
-.exd-result-img li.last {
-	margin-right: 0;
+.exd-result-img li > img {
+	width: 100%;
+    height: 145px;
+}
+
+@media (max-width: 1199px) and (min-width: 985px) {
+	.exd-box {
+		width: 985px;
+	}
+
+	.exd-header {
+		padding: 100px 0 150px 135px;
+	}
+}
+
+@media (max-width: 984px) {
+	.exd-box {
+		width: 100%;
+	}
+	
+	.exd-header {
+		padding: 100px 0 150px 40px;
+		text-align: left;
+	}
+
+	.exd-project {
+		width: 90%;
+		padding: 10px 0 30px;
+	}
+
+	.exd-project-inner {
+		width: 100%;
+		padding: 25px 0;
+	}
+
+	.exd-project-name {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.exd-project-txt {
+		display: block;
+		width: 50%;
+		height: auto;
+		margin: 20px auto;
+		padding: 0;
+		text-align: justify;
+		overflow: auto;
+	}
+
+	.exd-project-txt h3 {
+		text-align: center;
+	}
+
+	.exd-project-menu {
+		display: block;
+		width: 190px;
+		margin: 0 auto;
+	}
+
+	.exd-result {
+		width: 90%;
+	}
+}
+
+@media (max-width: 780px) {
+	.exd-title {
+		width: 500px;
+		height: 120px;
+	}
+
+	.exd-team-txt {
+		width: 90%;
+	}
+
+	.exd-img > img {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 560px) {
+	.exd-title {
+		width: 280px;
+    	height: 70px;
+	}
+	
+	.exd-header {
+		padding: 100px 0 70px 20px;
+	}
+
+	.exd-banner {
+		display: none;
+	}
+
+	.exd-team-txt {
+		width: 90%;
+	}
+
+	.exd-project {
+		margin: 50px auto 0;
+	}
 }

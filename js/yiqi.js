@@ -193,6 +193,11 @@ $(function() {
         }
     })();
 
+    // 回到顶部
+    $(".go-top").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+
     // 首页轮播
     (function() {
         /**

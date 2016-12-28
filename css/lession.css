@@ -526,22 +526,27 @@
 
 .course .course1 {
 	background-image: url('../images/lession_detail/content2/content2_1.jpg');
+	background-size: cover;
 }
 
 .course .course2 {
 	background-image: url('../images/lession_detail/content2/content2_2.jpg');
+	background-size: cover;
 }
 
 .course .course3 {
 	background-image: url('../images/lession_detail/content2/content2_3.jpg');
+	background-size: cover;
 }
 
 .course .course4 {
 	background-image: url('../images/lession_detail/content2/content2_4.jpg');
+	background-size: cover;
 }
 
 .course .course5 {
 	background-image: url('../images/lession_detail/content2/content2_5.jpg');
+	background-size: cover;
 }
 
 /* 公益演讲 */
@@ -878,4 +883,199 @@
         -webkit-transform: perspective(400px);
         transform: perspective(400px)
     }
+}
+
+@media (max-width: 860px) {
+	.le-header {
+		width: 100%;
+	}
+
+	.le-title,
+	.le-subtitle {
+		width: 90%;
+		max-width: 400px;
+	}
+
+	.le-intro {
+		width: 90%;
+	}
+
+	.le-intro-img {
+		width: 100%;
+	}
+
+	.le-lession {
+		height: auto;
+	}
+
+	.le-nav {
+		width: 100%;
+		height: auto;
+		padding: 0;
+		background: none;
+	}
+
+	.le-logo,
+	.le-share {
+		display: none;
+	}
+
+	.le-navlist {
+		padding: 0 0 20px;
+    	text-align: center;
+	}
+
+	.le-navlist > li {
+		padding-left: 0;
+	}
+
+	.le-content {
+		position: static;
+	}
+
+	.le-content .content {
+		height: auto;
+	}
+
+	.slide-wripe {
+		min-width: 0;
+		height: auto;
+	}
+
+	.slide-left {
+		float: none;
+		width: 90%;
+    	height: 480px; 
+    	padding: 100px 5%;
+    	margin: 0 auto; 
+	}
+
+	.slide-right {
+		display: none;
+	}
+
+	.unslide {
+		height: auto;
+	}
+
+	.unslider-nav {
+		display: none;
+	}
+
+	.course-box {
+		min-width: 0;
+	}
+
+	.course .mr2 {
+		margin-right: 0;
+	}
+
+	.course-top {
+		float: none;
+		width: 100%;
+	}
+
+	.course1 .computer {
+		transform: scale(0.8);
+	}
+
+	.intro .title {
+		font-size: 12px;
+	}
+
+	.course2 .word {
+		left: 8%;
+	}
+
+	.course2 .btns {
+		left: 50%;
+		margin-left: -121px;
+	}
+
+	.course-bottom {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.speeking .free {
+		position: static;
+		text-align: center;
+	}
+
+	.speeking .layer {
+		min-width: 0px;
+    	height: 400px;
+	}
+
+	.le-content .training {
+		padding: 100px 4% 100px;
+	}
+
+	.training-box {
+		min-width: 0;
+	}
+
+	.training .left {
+		float: none;
+		width: 100%;
+	}
+
+	.training .photos {
+		width: 100%;
+		height: 300px;
+	}
+
+	.training .right {
+		float: none;
+		width: 92%;
+		height: auto;
+		margin-left: 0;
+		padding: 80px 4% 55px;
+	}
+
+	.le-content .teacher {
+		background-repeat: repeat;
+	}
+
+	.teacher-box {
+		min-width: 0;
+	}
+
+	.title-box .line {
+		display: none;
+	}
+
+	.teacher-list > li {
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.le-content .news {
+		padding: 100px 4% 85px;
+	}
+
+	.news-box {
+		min-width: 0;
+	}
+
+	.news-list > li {
+		height: 150px;
+	}
+
+	.news-list img {
+    	position: absolute;
+    	bottom: 25px;
+    	width: 110px;
+	}
+
+	.news-list .time {
+		display: none;
+	}
+
+	.news-list .contents {
+		left: 120px;
+
+	}
 }

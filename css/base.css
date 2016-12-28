@@ -596,3 +596,9 @@ li.first:hover:after {
         font-size: 14px;
     }
 }
+
+@media (max-width: 639px) {
+    .go-top {
+        right: 15px;
+    }
+}

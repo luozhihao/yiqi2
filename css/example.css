@@ -226,10 +226,6 @@
 		width: 300px;
 		margin: 0 auto;
 	}
-
-	.go-top {
-		right: 15px;
-	}
 }
 
 @media (max-width: 380px) { 

@@ -226,7 +226,7 @@ body {
 
 	.exd-project-txt {
 		display: block;
-		width: 50%;
+		width: 90%;
 		height: auto;
 		margin: 20px auto;
 		padding: 0;
@@ -242,10 +242,16 @@ body {
 		display: block;
 		width: 190px;
 		margin: 0 auto;
+		text-align: center;
+	}
+
+	.exd-menu-btn {
+		font-size: 18px;
 	}
 
 	.exd-result {
 		width: 90%;
+		padding: 45px 0 40px;
 	}
 }
 

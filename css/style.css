@@ -106,6 +106,7 @@
 .ab-title > span {
     display: block;
     font-size: 20px;
+    color: #4c4948;
 }
 
 .ab-btn {
@@ -573,13 +574,19 @@
 }
 
 .sd-item {
-    float: left;
-    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
     text-align: center;
 }
 
 .sd-title {
     font-size: 20px;
+}
+
+.sd-subtitle {
+    color: #727171;
+    line-height: 35px;
 }
 
 .sd-box {
@@ -597,6 +604,8 @@
 .sd-txt {
     padding: 25px 45px;
     color: #727171;
+    line-height: 20px;
+    text-align: justify;
 }
 
 .sd-btn {
@@ -849,7 +858,9 @@
 
 .caption-txt {
     display: block;
-    line-height: 20px;
+    font-size: 24px;
+    color: #c9caca;
+    line-height: 35px;
 }
 
 .btn {
@@ -964,6 +975,50 @@
     }
 }
 
+@media (max-width: 1199px) { 
+
+    /* service */
+    .service {
+        height: 1000px !important;
+    }
+
+    .service-title {
+        height: 12%;
+    }
+
+    .service-body {
+        height: 88%;
+    }
+
+    .service-platform {
+        width: 100%;
+        height: 30%;
+    }
+
+    .service-platform .item img {
+        width: 85px;
+        height: 60px;
+    }
+
+    .service-detail {
+        width: 95%;
+        height: 70%;
+    }
+
+    .sd-title {
+        font-size: 14px;
+    }
+
+    .sd-item {
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+    .sd-txt {
+        padding: 25px 45px;
+    }
+}
+
 @media (max-width: 1199px) and (min-width: 1024px) {
 
     /* about */
@@ -1053,6 +1108,10 @@
 
     .ab-detail {
         padding-bottom: 20px;
+    }
+
+    .detail0 {
+        display: none;
     }
 
     .ab-btn {
@@ -1163,32 +1222,6 @@
         height: 70px;
     }
 
-    /* service */
-    .service {
-        height: 600px !important;
-    }
-
-    .service-title {
-        height: 15%;
-    }
-
-    .service-platform {
-        width: 100%;
-    }
-
-    .service-platform .item img {
-        width: 85px;
-        height: 60px;
-    }
-
-    .sd-title {
-        font-size: 14px;
-    }
-
-    .sd-txt {
-        padding: 25px 10px;
-    }
-
     /* contact */
     .contact-box {
         width: 92%;
@@ -1218,6 +1251,18 @@
 
     .contact-address {
         width: 270px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* service */
+    .service {
+        height: 1000px !important;
+    }
+
+    .service-title {
+        height: 5%;
     }
 }
 
@@ -1300,33 +1345,11 @@
 
     /* service */
     .service {
-        height: 1000px !important;
+        height: 1100px !important;
     }
 
     .service-title {
-        height: 12%;
-    }
-    
-    .service-body {
-        height: 88%;
-    }
-
-    .service-platform {
-        height: 25%;
-    }
-
-    .service-detail {
-        width: 95%;
-        height: 75%;
-    }
-
-    .sd-item {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-
-    .sd-txt {
-        padding: 25px 45px;
+        height: 5%;
     }
 
     /* partner */
@@ -1435,8 +1458,12 @@
     }
     
     /* service */ 
+    .service {
+        height: 1100px !important;
+    }
+
     .sd-txt {
-        padding: 25px 15px;
+        padding: 25px 10px;
     }
 
     .service-platform .item img {
@@ -1489,5 +1516,17 @@
 
     .point {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* service */ 
+    .service {
+        height: 1100px !important;
+    }
+
+    .sd-subtitle {
+        display: none;
     }
 }

@@ -36,9 +36,9 @@ $(function() {
     })
 
     // 定时轮播
-    setInterval(function () {
+    /*setInterval(function () {
         $('.swiper-button-next').trigger('click');
-    }, 10000);
+    }, 10000);*/
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {

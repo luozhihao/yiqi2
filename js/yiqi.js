@@ -5,27 +5,7 @@
  */
 
 $(function() {
-    
-    // 移动端导航效果
-    $(document).on('click', '.nav-btn', function() {
-        var e = $(this);
 
-        if (e.hasClass('btn-an')) {
-            e.removeClass('btn-an');
-
-            $('.nav').animate({
-                right: '-125px',
-            }, 500);
-
-        } else {
-            e.addClass('btn-an');
-
-            $('.nav').animate({
-                right: '0px',
-            }, 500);
-        }
-    });
-    
     // 鼠标移入课程图片效果
     $('.lession-img').hover(function() {
         $(this).parent().find('.l-box').addClass('bounce animated');
@@ -34,9 +14,11 @@ $(function() {
     })
 
     // 定时轮播
-    /*setInterval(function () {
-        $('.swiper-button-next').trigger('click');
-    }, 10000);*/
+    setInterval(function () {
+        if ($('.swiper-slide').length > 1) {
+            $('.swiper-button-next').trigger('click');
+        }
+    }, 10000);
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {
@@ -190,11 +172,6 @@ $(function() {
             var parallax2 = new Parallax(scene2);
         }
     })();
-
-    // 回到顶部
-    $(".go-top").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 500);
-    });
 });
 
 (function () {

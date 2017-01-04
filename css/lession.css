@@ -19,7 +19,25 @@
 }
 
 .le-subtitle {
+	width: 295px;
+	height: 23px;
+	line-height: 23px;
 	margin: 30px auto;
+	background: url('../images/lession_detail/sub_title.png') no-repeat;
+	text-align: center;
+	color: #f1cc9c;
+}
+
+.le-btn {
+	display: inline-block;
+	width: 153px;
+	height: 41px;
+	line-height: 44px;
+	background: url('../images/lession_detail/title_btn.png') no-repeat;
+	text-align: center;
+	color: #803f07;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 /* 中部介绍 */
@@ -31,7 +49,63 @@
 }
 
 .le-intro-img {
-	margin-bottom: 30px;
+	position: relative;
+	width: 765px;
+	height: 467px;
+	margin: 0 auto 30px;
+	background: url('../images/lession_detail/introduction.png') no-repeat;
+}
+
+.le-intro-img .intro {
+	position: absolute;
+	font-size: 16px;
+	color: #eb610f;
+}
+
+.le-intro-img .txt {
+	position: absolute;
+	color: #fff;
+	font-size: 16px;
+}
+
+.txt1 {
+    left: 336px;
+    top: 182px;
+}
+
+.txt2 {
+	left: 327px;
+	top: 199px;
+}
+
+.intro1 {
+	left: 77px;
+    top: 29px;
+}
+
+.intro2 {
+	left: 0;
+    top: 194px;
+}
+
+.intro3 {
+	left: 93px;
+    top: 399px;
+}
+
+.intro4 {
+	right: 106px;
+	top: 29px;
+}
+
+.intro5 {
+	right: 0;
+	top: 194px;
+}
+
+.intro6 {
+	right: 80px;
+	top: 399px;
 }
 
 .le-intro > p {
@@ -885,13 +959,22 @@
     }
 }
 
+@media (max-width: 1199px) {
+	.le-header {
+		width: 100%;
+	}
+
+	.le-intro {
+		width: 100%;
+	}
+}
+
 @media (max-width: 860px) {
 	.le-header {
 		width: 100%;
 	}
 
-	.le-title,
-	.le-subtitle {
+	.le-title {
 		width: 90%;
 		max-width: 400px;
 	}
@@ -901,7 +984,54 @@
 	}
 
 	.le-intro-img {
-		width: 100%;
+		width: 400px;
+		height: 260px;
+		background-size: contain;
+	}
+
+	.le-intro-img .intro,
+	.le-intro-img .txt {
+    	font-size: 12px;
+	}
+
+	.txt1 {
+	    left: 172px;
+    	top: 90px;
+	}
+
+	.txt2 {
+	    left: 167px;
+    	top: 103px;
+	}
+
+	.intro1 {
+	    left: 40px;
+    	top: 8px;
+	}
+
+	.intro2 {
+	    left: 0;
+	    top: 94px;
+	}
+
+	.intro3 {
+	    left: 50px;
+    	top: 202px;
+	}
+
+	.intro4 {
+	   	right: 53px;
+    	top: 8px;
+	}
+
+	.intro5 {
+	   	right: 0px;
+    	top: 94px;
+	}
+
+	.intro6 {
+	   	right: 44px;
+    	top: 202px;
 	}
 
 	.le-lession {
@@ -1077,5 +1207,57 @@
 	.news-list .contents {
 		left: 120px;
 
+	}
+}
+
+@media (max-width: 450px) {
+	.le-intro-img {
+		width: 250px;
+    	height: 154px;
+	}
+
+	.le-intro-img .intro,
+	.le-intro-img .txt {
+    	font-size: 12px;
+	}
+
+	.txt1 {
+	    left: 103px;
+    	top: 50px;
+	}
+
+	.txt2 {
+	    left: 98px;
+    	top: 63px;
+	}
+
+	.intro1 {
+	    left: 7px;
+    	top: -1px;
+	}
+
+	.intro2 {
+	    left: 0;
+	    top: 54px;
+	}
+
+	.intro3 {
+	    left: 19px;
+    	top: 120px;
+	}
+
+	.intro4 {
+	   	right: 20px;
+    	top: -1px;
+	}
+
+	.intro5 {
+	   	right: -21px;
+    	top: 54px;
+	}
+
+	.intro6 {
+	   	right: 4px;
+    	top: 120px;
 	}
 }

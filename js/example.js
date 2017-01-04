@@ -63,9 +63,4 @@ $(function() {
 			$parent.find('.ex-page li').eq($index + 1).trigger('click');
 		}
 	});
-
-	// 回到顶部
-	$(".go-top").click(function() {
-		$("html, body").animate({ scrollTop: 0 }, 500);
-	});
 });

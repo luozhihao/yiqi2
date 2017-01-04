@@ -247,6 +247,12 @@ li.first:hover:after {
     right: 5px;
 }
 
+.tel-num:hover {
+    color: #eb610f;
+    cursor: pointer;
+    transition: all .2s;
+}
+
 /* footer */
 .footer {
     position: relative;

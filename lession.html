@@ -53,7 +53,7 @@
 		</div>
 		<div class="phone">
 			<img class="phone-icon" src="images/header/phone_icon.png" height="16" width="15">
-			<span>热线电话：025-86306489</span>
+			<span>热线电话：<span class="tel-num">025-58206840</span></span>
 		</div>
 		<img class="nav-btn" src="images/header/navBtn.png">
 	</div>
@@ -62,17 +62,24 @@
 		<!-- 头部介绍 -->
 		<div class="le-header">
 			<img class="le-title" src="./images/lession_detail/title.png">
-			<img class="le-subtitle" src="./images/lession_detail/sub_title.png">
-			<a href="#">
-				<img src="./images/lession_detail/title_btn.png">
-			</a>
+			<div class="le-subtitle">一站式企业定制化办公技能培训解决方案</div>
+			<a class="le-btn" href="#">预约课程</a>
 		</div>
 		<!-- 中部介绍 -->
 		<div class="le-intro">
-			<img class="le-intro-img" src="images/lession_detail/introduction.png">
+			<div class="le-intro-img">
+				<span class="intro intro1">线上培训、课程</span>
+				<span class="intro intro2">企业内训</span>
+				<span class="intro intro3">精英特训营</span>
+				<span class="intro intro4">课程质量可靠</span>
+				<span class="intro intro5">定制化，满足需求</span>
+				<span class="intro intro6">培训与资讯一体化</span>
+				<span class="txt txt1">机构</span>
+				<span class="txt txt2">介绍</span>
+			</div>
 			<p>绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程</p>
 			<p>拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，</p>
-			<p>开展了数十场内容丰富，专题明确的线下实训课程</p>
+			<p>开展了数十场内容丰富、专题明确的线下实训课程</p>
 		</div>
 		<!-- 课程介绍 -->
 		<div id="lession" class="le-lession">
@@ -84,7 +91,8 @@
 					<li v-for="(list, index) in lists" v-text="list" :class="{active: active === index + 1}" @click="isActive(index)"></li>
 				</ul>
 				<div class="le-share">
-					<span class="le-tel">025-82366489</span>
+					<img src="./images/lession_detail/tel.png">
+					<span class="le-tel">025-58206840</span>
 					<div class="le-share-box">
 						<div class="le-share-item share">
 							<div class="share-box box" data-width="80px">
@@ -138,10 +146,7 @@
 										<span class="theme">确定战略合作关系</span>
 									</div>
 									<p class="txt">
-										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
-									</p>
-									<p class="txt">
-										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+										绎奇培训，基于学员真实痛点与需求的专业培训。基于以往对不同企业员工的上百场offico内训、数十场office线下特训，我们深知学员们的几大通病：软件操作不熟练、基本审美能力低下、办公软件背后的理念认识不足，对此，我们携手知名企业，提供最有效的解决方案。
 									</p>
 									<div class="slide-menu-txt">
 										我的需求与此项目类似
@@ -162,10 +167,7 @@
 										<span class="theme">确定战略合作关系</span>
 									</div>
 									<p class="txt">
-										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
-									</p>
-									<p class="txt">
-										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+										绎奇培训，基于学员真实痛点与需求的专业培训。基于以往对不同企业员工的上百场offico内训、数十场office线下特训，我们深知学员们的几大通病：软件操作不熟练、基本审美能力低下、办公软件背后的理念认识不足，对此，我们携手知名企业，提供最有效的解决方案。
 									</p>
 									<div class="slide-menu-txt">
 										我的需求与此项目类似
@@ -186,10 +188,7 @@
 										<span class="theme">确定战略合作关系</span>
 									</div>
 									<p class="txt">
-										绎奇培训，融合丰富演示、设计经验，跟进时下最新教育理念，开设了PPT技能线上培训、企业内训、线下培训的公开培训课程
-									</p>
-									<p class="txt">
-										拥有一支理论知识渊博、实战经验丰富的强大师资团队，提供多样化的教学模式。目前，优质动画课程已登录网易云线上课程，携手知名企业，量身定制100多场内训课程，开展了数十场内容丰富，专题明确的线下实训课程
+										绎奇培训，基于学员真实痛点与需求的专业培训。基于以往对不同企业员工的上百场offico内训、数十场office线下特训，我们深知学员们的几大通病：软件操作不熟练、基本审美能力低下、办公软件背后的理念认识不足，对此，我们携手知名企业，提供最有效的解决方案。
 									</p>
 									<div class="slide-menu-txt">
 										我的需求与此项目类似
@@ -408,5 +407,6 @@
 	<script src="./js/plugin/jquery.min.js?v=201612142055"></script>
 	<script src="./js/plugin/core.min.js"></script>
 	<script src="./js/lession.js?v=201612142055"></script>
+	<script src="./js/base.js?v=201612142055"></script>
 </body>
 </html>

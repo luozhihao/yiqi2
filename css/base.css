@@ -81,6 +81,15 @@ textarea:focus {
     display: none;
 }
 
+.loading {
+    background: #212021 url('../images/loading2.gif') center center no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 /* header */
 .header {
     position: absolute;
@@ -401,6 +410,7 @@ li.first:hover:after {
     right: 40px;
     bottom: 80px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 @media (max-width: 1439px) and (min-width: 1200px) {

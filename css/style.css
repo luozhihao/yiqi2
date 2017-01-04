@@ -878,13 +878,6 @@
     color: #fff;
 }
 
-.btn-border {
-    display: inline-block;
-    border: 1px solid #fff;
-    padding: 4px;
-}
-
-
 @-webkit-keyframes bounce {
     0%,
     100%,
@@ -956,7 +949,25 @@
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    display: block !important;
+}
+
+.btn-border {
+    display: inline-block !important;
+    border: 1px solid #fff;
+    padding: 4px;
+}
+
+.hidden .btn {
+    display: none;
+}
+
+.fadeInUp .btn {
+    display: block;
 }
 
 

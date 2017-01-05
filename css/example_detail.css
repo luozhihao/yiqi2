@@ -40,8 +40,19 @@ body {
 	line-height: 28px;
 }
 
-.exd-img {
-	text-align: center;
+.exd-video {
+	position: relative;
+	width: 732px;
+	height: 611px;
+	margin: 0 auto;
+	background: url('../images/example_detail/computer.png') center center no-repeat;
+	background-size: contain;
+}
+
+.video {
+	position: absolute;
+	left: 29px;
+    top: 28px;
 }
 
 .exd-project {
@@ -255,6 +266,20 @@ body {
 	}
 }
 
+@media (max-width: 800px) {
+	.exd-video {
+		width: 500px;
+		height: 415px;
+	}
+
+	.video {
+		left: 23px;
+		top: 20px;
+		width: 456px;
+    	height: 257px;
+	}
+}
+
 @media (max-width: 780px) {
 	.exd-title {
 		width: 500px;
@@ -291,5 +316,19 @@ body {
 
 	.exd-project {
 		margin: 50px auto 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.exd-video {
+		width: 280px;
+		height: 240px;
+	}
+
+	.video {
+		left: 11px;
+    	top: 15px;
+    	width: 258px;
+    	height: 144px;
 	}
 }

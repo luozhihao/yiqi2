@@ -184,7 +184,7 @@ $(function() {
 
             swiperFn();
 
-            $('.scroll-img').prop('src', 'images/about/scroll.jpg');
+            $('.scroll-img').prop('src', "http://www.yiqi-media.cn/Template/yiqi1.0/Home/Public/images/about/scroll.jpg");
         }
     }
 
@@ -565,3 +565,11 @@ function swiperFn () {
         }
     });
 }
+
+/*案例跳转*/
+$(".case").click(function(){
+    var url = $(this).attr("data-url");
+    window.location.assign(url);
+});
+
+

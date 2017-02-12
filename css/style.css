@@ -130,7 +130,7 @@
 .ab-underline {
     display: inline-block;
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: #4c4948;
 }
 
@@ -174,10 +174,10 @@
     display: block;
     width: 100%;
     position: relative;
-    transition: all 5s ease-out;
-    -webkit-transition: all 5s ease-out;
-    -moz-transition: all 5s ease-out;
-    -ms-transition: all 5s ease-out;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -578,6 +578,7 @@
     vertical-align: top;
     width: 19%;
     text-align: center;
+    border-right: 1px solid #ccc;
 }
 
 .sd-title {
@@ -590,7 +591,7 @@
 }
 
 .sd-box {
-    border-right: 1px solid #ccc;
+    /*border-right: 1px solid #ccc;*/
 }
 
 .sd-split {
@@ -602,10 +603,11 @@
 }
 
 .sd-txt {
-    padding: 25px 40px;
+    padding: 25px 40px 0px 25px;
     color: #727171;
     line-height: 20px;
     text-align: justify;
+
 }
 
 .sd-btn {
@@ -747,7 +749,7 @@
 }
 
 .point {
-    font-size: 16px;
+    font-size: 14px;
     color: #e95f24;
     font-weight: 400;
 }

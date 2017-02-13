@@ -350,6 +350,7 @@
     table-layout: fixed;
     width: 100%;
     height: 10%;
+    background: #f2f2f2;
     text-align: center;
 }
 
@@ -533,7 +534,7 @@
 
 .service-plat {
     position: absolute;
-    left: 0;
+    left: -10px;
     bottom: -150px;
     width: 100%;
 }
@@ -548,23 +549,23 @@
 }
 
 .service-item1 {
-    left: 13%;
+    left: 10%;
 }
 
 .service-item2 {
-    left: 28%;
+    left: 25%;
 }
 
 .service-item3 {
-    left: 44%;
+    left: 42%;
 }
 
 .service-item4 {
-    left: 59%;
+    left: 58%;
 }
 
 .service-item5 {
-    left: 75%;
+    left: 74%;
 }
 
 .service-detail {
@@ -634,7 +635,7 @@
 }
 
 .partner-title {
-    height: 20%;
+    height: 15%;
 }
 
 .partner-title .title {
@@ -674,6 +675,7 @@
     position: relative;
     background: url("../images/contact/contact_bg.jpg");
     background-position: center top;
+    margin-bottom: 5px;
 }
 
 .contact-title {

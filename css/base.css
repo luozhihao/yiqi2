@@ -92,7 +92,7 @@ textarea:focus {
 
 /* header */
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     max-width: 1920px;
@@ -170,6 +170,10 @@ textarea:focus {
 
 .nav > li.last > a:after {
     display: none;
+}
+
+.nav > li:hover a {
+    color: #fff;
 }
 
 .nav > li:hover:before {

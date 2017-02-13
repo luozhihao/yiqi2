@@ -140,7 +140,7 @@
 
 .ex-pagination .prev,
 .ex-pagination .next {
-	font-size: 22px;
+	font-size: 18px;
     color: #a7a7b4;
     cursor: pointer;
 }
@@ -154,7 +154,7 @@
 	display: inline-block;
 	width: 60px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 18px;
     color: #a7a7b4;
     cursor: pointer;
 }

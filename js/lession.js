@@ -53,6 +53,14 @@ var vm = new Vue({
 		})
 
 		this.moveScreen();
+
+		// 客服QQ
+		var qq_kefu = "3348656075";
+
+		$(".qq-kefu").click(function(){
+    		var url = "http://wpa.qq.com/msgrd?v=3&uin="+qq_kefu+"&Site=绎奇传媒&Menu=yes";
+    		window.open(url);
+		});
 	},
 	methods: {
 

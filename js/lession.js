@@ -57,10 +57,18 @@ var vm = new Vue({
 		// 客服QQ
 		var qq_kefu = "3348656075";
 
-		$(".qq-kefu").click(function(){
+		$(".qq-kefu").on('click', function(){
     		var url = "http://wpa.qq.com/msgrd?v=3&uin="+qq_kefu+"&Site=绎奇传媒&Menu=yes";
     		window.open(url);
 		});
+
+		// 获取激活导航
+		if (location.search) {
+			var active = location.search.split('=')[1];
+
+			this.active = parseInt(active);
+			location.hash='#lession';
+		}
 	},
 	methods: {
 

@@ -14,11 +14,11 @@ $(function() {
     })
 
     // 定时轮播
-    // setInterval(function () {
-    //     if ($('.swiper-slide').length > 1) {
-    //         $('.swiper-button-next').trigger('click');
-    //     }
-    // }, 10000);
+    setInterval(function () {
+        if ($('.swiper-slide').length > 1) {
+            $('.swiper-button-next').trigger('click');
+        }
+    }, 10000);
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {
@@ -173,12 +173,19 @@ $(function() {
         }
     })();
 
+    // 案例跳转
+    $(".case").on('click', function(){
+        var url = $(this).attr("data-url");
+
+        window.location.assign(url);
+    });
+
     // 培训课程跳转
     $('.lession-items .item').on('click', function() {
         var active = $(this).attr('data-active');
 
-        // location.href = 'file:///Users/chris/Desktop/yiqi2-master/yiqi2/lession?active=' + active
-    })
+        location.href = 'http://www.yiqi-media.cn/Home/Index/lession?active=' + active
+    });
 });
 
 (function () {
@@ -572,11 +579,5 @@ function swiperFn () {
         }
     });
 }
-
-/*案例跳转*/
-$(".case").click(function(){
-    var url = $(this).attr("data-url");
-    window.location.assign(url);
-});
 
 

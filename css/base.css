@@ -243,6 +243,7 @@ li.first:hover:after {
     line-height: 82px;
     color: #696968;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .phone-icon {

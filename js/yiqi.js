@@ -172,6 +172,13 @@ $(function() {
             var parallax2 = new Parallax(scene2);
         }
     })();
+
+    // 培训课程跳转
+    $('.lession-items .item').on('click', function() {
+        var active = $(this).attr('data-active');
+
+        // location.href = 'file:///Users/chris/Desktop/yiqi2-master/yiqi2/lession?active=' + active
+    })
 });
 
 (function () {

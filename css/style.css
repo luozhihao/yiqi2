@@ -87,6 +87,7 @@
     margin-top: -200px !important;
 }
 
+.intro1-title,
 .intro3-title {
     margin-top: -80px !important;
 }
@@ -166,11 +167,20 @@
     margin-left: 27px;
 }
 
+.intro1-topic,
 .intro3-topic,
 .intro4-topic {
     position: relative;
     width: 115px;
     margin: 0 auto 35px;
+}
+
+.intro1-topic .txt {
+    position: absolute;
+    left: 34px;
+    top: 6px;
+    color: #fff;
+    font-size: 12px;
 }
 
 .intro3-topic .txt {

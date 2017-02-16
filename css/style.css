@@ -71,12 +71,16 @@
 .caption-txt {
     display: block;
     font-size: 24px;
-    color: #c9caca;
+    color: #b0b0b0;
     line-height: 35px;
 }
 
 .swiper-slide-caption .intro1-txt {
     margin-top: 15px;
+}
+
+.swiper-slide-caption .intro4-txt {
+    margin-top: 0;
 }
 
 .intro2-title {
@@ -85,6 +89,10 @@
 
 .intro3-title {
     margin-top: -80px !important;
+}
+
+.intro4-title {
+    color: #e05424;
 }
 
 .intro3-txts {
@@ -158,7 +166,8 @@
     margin-left: 27px;
 }
 
-.intro3-topic {
+.intro3-topic,
+.intro4-topic {
     position: relative;
     width: 115px;
     margin: 0 auto 35px;
@@ -171,6 +180,24 @@
     color: #381302;
     font-size: 12px;
     font-weight: 700;
+}
+
+.intro4-topic .txt1 {
+    position: absolute;
+    left: 33px;
+    top: 24px;
+    color: #f9ddd0;
+    font-size: 12px;
+}
+
+.intro4-topic .txt2 {
+    position: absolute;
+    left: 35px;
+    top: 46px;
+    color: #383a3a;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 8px;
 }
 
 /* about */

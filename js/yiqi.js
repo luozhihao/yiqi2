@@ -14,11 +14,11 @@ $(function() {
     })
 
     // 定时轮播
-    setInterval(function () {
-        if ($('.swiper-slide').length > 1) {
-            $('.swiper-button-next').trigger('click');
-        }
-    }, 10000);
+    // setInterval(function () {
+    //     if ($('.swiper-slide').length > 1) {
+    //         $('.swiper-button-next').trigger('click');
+    //     }
+    // }, 10000);
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {

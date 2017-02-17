@@ -150,6 +150,9 @@
     background: url(../images/swiper/intro-02-btn.png) no-repeat 0 center;
     text-align: center;
 }
+.swiper-slide-caption .intro2-menu:hover {
+    background: url(../images/swiper/intro-02-btn-hover.png) no-repeat 0 center;
+}
 
 .intro2-menu span,
 .intro2-menu img {

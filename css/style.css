@@ -116,24 +116,24 @@
 
 .intro3-txts .txt2 {
     left: 132px;
-    top: 3px;
+    top: 13px;
     font-size: 25px;
 }
 
 .intro3-txts .txt3 {
     left: 132px;
-    top: 37px;
+    top: 50px;
     font-size: 16px;
 }
 
 .intro3-txts .txt4 {
     display: inline-block;
     left: 210px;
-    top: 5px;
+    top: 19px;
     font-size: 14px;
     color: #e05313;
     background: rgba(69, 65, 64, 0.6);
-    padding: 5px 10px;
+    padding: 3px 10px;
     text-shadow: 2px 1px #000;
 }
 

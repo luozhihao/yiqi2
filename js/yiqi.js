@@ -11,14 +11,23 @@ $(function() {
         $(this).parent().find('.l-box').addClass('bounce animated');
     }, function() {
         $(this).parent().find('.l-box').removeClass('bounce animated');
-    })
+    });
 
     // 定时轮播
-    // setInterval(function () {
-    //     if ($('.swiper-slide').length > 1) {
-    //         $('.swiper-button-next').trigger('click');
-    //     }
-    // }, 10000);
+    (function() {
+        function intervalFn() {
+            if ($('.swiper-slide').length > 1) {
+                $('.swiper-button-next').trigger('click');
+            }
+        }
+
+        var interval = setInterval(intervalFn, 10000);
+
+        $('.swiper-button-prev, .swiper-button-next').on('click', function() {
+            clearInterval(interval)
+            interval = setInterval(intervalFn, 10000);
+        })
+    })();
     
     // 导航定位
     $(document).on('click', '.nav > li > a', function (e) {
@@ -211,9 +220,6 @@ $(function() {
         var top = $(window).scrollTop(),
             w = $(window).width();
 
-        console.log(top);
-        console.log(example);
-
         if (w > 1023) {
             if (top < about) {
                 active('silde');
@@ -235,7 +241,7 @@ $(function() {
         } else {
             active('');
         }
-    })
+    });
 });
 
 (function () {

@@ -252,7 +252,7 @@ li.first:hover:after {
     right: 5px;
 }
 
-.tel-num:hover {
+.phone span:hover {
     color: #eb610f;
     cursor: pointer;
     transition: all .2s;

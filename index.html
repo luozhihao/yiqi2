@@ -805,6 +805,16 @@
 
 		    local.search("南京绎奇传媒");
 		})();
+
+		//修改路径
+		var path = "./images/1.png";
+		var path2 = "./images/header/phone_icon.png";
+		$(".phone span").mouseover(function(){
+		  $(".phone-icon").attr('src',path); 
+		});
+		$(".phone span").mouseout(function(){
+		  $(".phone-icon").attr('src',path2); 
+		});
 	</script>
 </body>
 </html>

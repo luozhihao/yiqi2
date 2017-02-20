@@ -171,11 +171,16 @@
 }
 
 .intro1-topic,
-.intro3-topic,
-.intro4-topic {
+.intro3-topic{
     position: relative;
     width: 115px;
     margin: 0 auto 35px;
+}
+
+.intro4-topic {
+    position: relative;
+    width: 115px;
+    margin: 0 auto 95px;
 }
 
 .intro1-topic .txt {

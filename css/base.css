@@ -138,7 +138,7 @@ textarea:focus {
 }
 
 .nav {
-    width: 600px;
+    width: 675px;
     height: 82px;
     line-height: 82px;
     margin: 0 auto;
@@ -172,11 +172,11 @@ textarea:focus {
     display: none;
 }
 
-.nav > li:hover a {
+.nav > li.active a {
     color: #fff;
 }
 
-.nav > li:hover:before {
+.nav > li.active:before {
     content: '';
     position: absolute;
     left: 8px;
@@ -190,11 +190,11 @@ textarea:focus {
     border-style: solid dashed dashed dashed;
 }
 
-li.first:hover:before {
+li.first.active:before {
     left: -5px;
 }
 
-.nav > li:hover:after {
+.nav > li.active:after {
     content: '';
     position: absolute;
     left: -10px;
@@ -209,11 +209,11 @@ li.first:hover:before {
     border-style: dashed dashed solid dashed;
 }
 
-li.first:hover:after {
+li.first.active:after {
     left: -25px;
 }
 
-.nav > li:hover .second-nav {
+.nav > li.active .second-nav {
     display: block;
 }
 
@@ -452,7 +452,7 @@ li.first:hover:after {
     }
 
     .nav {
-        width: 535px;
+        width: 615px;
     }
 
     .nav > li > a {

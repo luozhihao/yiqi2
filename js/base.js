@@ -24,4 +24,13 @@ $(function () {
 	        }, 500);
 	    }
 	});
+
+	// 导航高亮
+	$('.nav li').hover(function() {
+	    $(this).addClass('active');
+	}, function() {
+		if (!$(this).hasClass('cur')) {
+			$(this).removeClass('active');
+		}
+	})
 })

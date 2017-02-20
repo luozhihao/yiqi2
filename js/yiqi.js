@@ -28,7 +28,7 @@ $(function() {
         if (target) {
             e.preventDefault();
 
-            var top = $('#' + target).offset().top;
+            var top = $('#' + target).position().top;
 
             if (w > 1023) {
                 $("html, body").animate({ scrollTop: top }, 500, 'swing');
@@ -186,6 +186,56 @@ $(function() {
 
         location.href = 'http://www.yiqi-media.cn/Home/Index/lession?active=' + active
     });
+
+    // 导航激活切换
+    $(window).scroll(function() {
+        function active(name) {
+            $nav = $('.nav');
+
+            if (name) {
+                $nav.find('[data-target="' + name + '"]').parent().addClass('active cur').siblings().removeClass('active cur');
+            } else {
+                $nav.find('li').removeClass('active');
+            }
+        }
+
+        var silde = $('#silde').position().top,
+            about = $('#about').position().top,
+            example = $('#example').position().top,
+            lession = $('#lession').position().top,
+            member = $('#member').position().top,
+            service = $('#service').position().top,
+            partner = $('#partner').position().top,
+            contact = $('#contact').position().top;
+
+        var top = $(window).scrollTop(),
+            w = $(window).width();
+
+        console.log(top);
+        console.log(example);
+
+        if (w > 1023) {
+            if (top < about) {
+                active('silde');
+            } else if (about <= top && top < example) {
+                active('about');
+            } else if (example <= top && top < lession) {
+                active('example');
+            } else if (lession <= top && top < member) {
+                active('lession');
+            } else if (member <= top && top < service) {
+                active('');
+            } else if (service <= top && top < partner) {
+                active('service');
+            } else if (partner <= top && top < contact) {
+                active('partner');
+            } else if (top >= contact) {
+                active('contact');
+            }
+        } else {
+            active('');
+        }
+    })
 });
 
 (function () {

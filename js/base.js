@@ -26,11 +26,23 @@ $(function () {
 	});
 
 	// 导航高亮
-	$('.nav li').hover(function() {
-	    $(this).addClass('active');
-	}, function() {
-		if (!$(this).hasClass('cur')) {
-			$(this).removeClass('active');
+	function isActive() {
+		w = $(window).width();
+
+		if (w > 1023) {
+			$('.nav li').hover(function() {
+			    $(this).addClass('active');
+			}, function() {
+				if (!$(this).hasClass('cur')) {
+					$(this).removeClass('active');
+				}
+			})
+		} else {
+			$('.nav li').removeClass('active cur');
 		}
-	})
+	}
+
+	isActive();
+
+	$(window).resize(isActive);
 })

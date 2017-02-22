@@ -209,7 +209,7 @@ $(function() {
         }
 
         var silde = $('#silde').position().top,
-             about = $('#about').position().top - 81,
+            about = $('#about').position().top - 81,
             example = $('#example').position().top - 81,
             lession = $('#lession').position().top - 81,
             member = $('#member').position().top - 81,
@@ -242,6 +242,9 @@ $(function() {
             active('');
         }
     });
+
+    // 导航跳转激活
+    location.hash = location.hash
 });
 
 (function () {

@@ -40,7 +40,7 @@ $(function() {
             var top = $('#' + target).position().top;
 
             if (w > 1023) {
-                $("html, body").animate({ scrollTop: top }, 500, 'swing');
+                $("html, body").animate({ scrollTop: top - 81 }, 500, 'swing');
             } else {
                 $("html, body").animate({ scrollTop: top - 81 }, 500, 'swing');
             }            

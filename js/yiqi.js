@@ -209,13 +209,13 @@ $(function() {
         }
 
         var silde = $('#silde').position().top,
-            about = $('#about').position().top,
-            example = $('#example').position().top,
-            lession = $('#lession').position().top,
-            member = $('#member').position().top,
-            service = $('#service').position().top,
-            partner = $('#partner').position().top,
-            contact = $('#contact').position().top;
+             about = $('#about').position().top - 81,
+            example = $('#example').position().top - 81,
+            lession = $('#lession').position().top - 81,
+            member = $('#member').position().top - 81,
+            service = $('#service').position().top - 81,
+            partner = $('#partner').position().top - 81,
+            contact = $('#contact').position().top - 81;
 
         var top = $(window).scrollTop(),
             w = $(window).width();

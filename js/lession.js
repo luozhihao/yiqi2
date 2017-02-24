@@ -69,6 +69,42 @@ var vm = new Vue({
 			this.active = parseInt(active);
 			location.hash='#lession';
 		}
+
+		// 最新动态翻页
+		$(document).on('click', '#news_page li', function() {
+            var e = $(this),
+                index = e.index();
+
+            e.addClass('active').siblings().removeClass('active');
+
+            var obj = $('.news-list').eq(index);
+
+            obj.addClass('active').siblings().removeClass('active');
+        })
+
+        $(document).on('click', '.pagination .prev', function() {
+            var e = $(this),
+                $parent = e.parent(),
+                $index = $parent.find('li.active').index();
+
+            if ($index === 0) {
+                return false;
+            } else {
+                $parent.find('.page li').eq($index - 1).trigger('click');
+            }
+        });
+
+        $(document).on('click', '.pagination .next', function() {
+            var e = $(this),
+                $parent = e.parent(),
+                $index = $parent.find('li.active').index();
+
+            if ($index === $parent.find('li').length - 1) {
+                return false;
+            } else {
+                $parent.find('.page li').eq($index + 1).trigger('click');
+            }
+        });
 	},
 	methods: {
 

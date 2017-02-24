@@ -800,9 +800,14 @@
 }
 
 .news-list {
+	display: none;
 	width: 85%;
 	margin: 0 auto;
 	text-align: left;
+}
+
+.news-list.active {
+	display: block;
 }
 
 .news-list img {

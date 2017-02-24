@@ -47,6 +47,7 @@ body {
 	margin: 0 auto;
 	background: url('../images/example_detail/computer.png') center center no-repeat;
 	background-size: contain;
+	margin-top:20px;
 }
 
 .video {

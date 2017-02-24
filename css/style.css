@@ -670,8 +670,7 @@
 
 .service-platform {
     position: relative;
-    width: 90%;
-    max-width: 1400px;
+    max-width: 1440px;
     height: 50%;
     margin: 0 auto;
 }
@@ -699,29 +698,28 @@
 }
 
 .service-item1 {
-    left: 10%;
+    left: 11%;
 }
 
 .service-item2 {
-    left: 25%;
+    left: 27%;
 }
 
 .service-item3 {
-    left: 42%;
+    left: 44%;
 }
 
 .service-item4 {
-    left: 58%;
+    left: 60%;
 }
 
 .service-item5 {
-    left: 74%;
+    left: 76%;
 }
 
 .service-detail {
     position: relative;
-    width: 76%;
-    max-width: 1100px;
+    max-width: 1200px;
     height: 50%;
     margin: 0 auto;
 }
@@ -729,7 +727,7 @@
 .sd-item {
     display: inline-block;
     vertical-align: top;
-    width: 19%;
+    width: 19.5%;
     text-align: center;
     border-right: 1px solid #ccc;
 }
@@ -775,6 +773,138 @@
     cursor: pointer;
 }
 
+/* news */
+.news {
+    position: relative;
+    background: url("../images/news/news_bg.jpg") center top no-repeat;
+    background-size: cover;
+    height: 850px !important;
+}
+.news-title {
+    height: 10%;
+}
+
+.news-title .title {
+    padding-top: 3%;
+}
+
+.news-wrap {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    height: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.news-box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.news-list {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.news-list.active {
+    display: block;
+}
+
+.news-list img {
+    vertical-align: bottom;
+}
+
+.news-list > li {
+    position: relative;
+    width: 100%;
+    background: #f4f4f4;
+    border-bottom: 2px solid #b3b4b4;
+    margin-bottom: 30px;
+    box-shadow: 0 -1px 5px #dedede;
+}
+
+.news-list h3 {
+    font-size: 20px;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.news-list .contents {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    padding: 40px 0 0;
+    overflow: hidden;
+}
+
+.news-list .txt {
+    color: #5f5e5e;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.news-list .time {
+    position: absolute;
+    right: -8px;
+    top: 10px;
+    width: 135px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #fff;
+    background: #eb610f;
+    padding-left: 12px;
+    z-index: 2;
+}
+
+.time-icon {
+    position: absolute;
+    right: -12px;
+    top: 47px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 5px;
+    border-color: transparent transparent transparent #a03d02;
+    border-style: dashed dashed dashed solid;
+    z-index: 1;
+}
+
+.pagination {
+    margin: 40px auto 0;
+}
+
+.pagination .prev,
+.pagination .next {
+    font-size: 14px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.pagination .page {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.pagination .page > li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.pagination .page > li.active {
+    color: #d1d1d1;
+}
 
 /* partner */
 .partner {
@@ -799,7 +929,7 @@
 .partner-logo {
     display: table;
     width: 100%;
-    max-width: 1094px;
+    max-width: 1200px;
     height: 80%;
     margin: 0 auto;
     padding-top: 20px;
@@ -812,7 +942,7 @@
 
 .partner-logo img {
     float: left;
-    width: 180px;
+    width: 200px;
     height: 88.8px;
     margin-bottom: 35px;
     border: 1px solid #785d50;
@@ -1177,6 +1307,11 @@
     .sd-txt {
         padding: 25px 45px;
     }
+
+    /* news */
+    .news-wrap {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1199px) and (min-width: 1024px) {
@@ -1424,6 +1559,15 @@
     .service-title {
         height: 5%;
     }
+
+    /* news */
+    .news-list .time {
+        display: none;
+    }
+
+    .news-list .time-icon {
+        display: none;
+    }
 }
 
 @media (max-width: 639px) {
@@ -1510,6 +1654,16 @@
 
     .service-title {
         height: 5%;
+    }
+
+    /* news */
+    .news-list h3 {
+        height: 14px;
+        font-size: 14px;
+    }
+
+    .news-list .contents {
+        left: 225px;
     }
 
     /* partner */
@@ -1604,6 +1758,32 @@
         height: 106px;
         bottom: 60px;
         left: 10px;
+    }
+
+    /* news */
+    .news {
+        height: 1300px !important;
+    }
+
+    .news-wrap {
+        height: 97%;
+    }
+
+    .news-title {
+        height: 3%;
+    }
+
+    .news-list > li {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .news-list .contents {
+        position: static;
+    }
+
+    .pagination .page {
+        padding: 0 15px;
     }
     
     /* partner */

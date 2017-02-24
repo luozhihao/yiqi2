@@ -214,6 +214,7 @@ $(function() {
             lession = $('#lession').position().top - 81,
             member = $('#member').position().top - 81,
             service = $('#service').position().top - 81,
+            news = $('#news').position().top - 81,
             partner = $('#partner').position().top - 81,
             contact = $('#contact').position().top - 81;
 
@@ -231,8 +232,10 @@ $(function() {
                 active('lession');
             } else if (member <= top && top < service) {
                 active('');
-            } else if (service <= top && top < partner) {
+            } else if (service <= top && top < news) {
                 active('service');
+            } else if (news <= top && top < partner) {
+                active('news');
             } else if (partner <= top && top < contact) {
                 active('partner');
             } else if (top >= contact) {
@@ -244,7 +247,45 @@ $(function() {
     });
 
     // 导航跳转激活
-    location.hash = location.hash
+    location.hash = location.hash;
+
+    // 最新动态翻页
+    (function() {
+        $(document).on('click', '#news_page li', function() {
+            var e = $(this),
+                index = e.index();
+
+            e.addClass('active').siblings().removeClass('active');
+
+            var obj = $('.news-list').eq(index);
+
+            obj.addClass('active').siblings().removeClass('active');
+        })
+
+        $(document).on('click', '.pagination .prev', function() {
+            var e = $(this),
+                $parent = e.parent(),
+                $index = $parent.find('li.active').index();
+
+            if ($index === 0) {
+                return false;
+            } else {
+                $parent.find('.page li').eq($index - 1).trigger('click');
+            }
+        });
+
+        $(document).on('click', '.pagination .next', function() {
+            var e = $(this),
+                $parent = e.parent(),
+                $index = $parent.find('li.active').index();
+
+            if ($index === $parent.find('li').length - 1) {
+                return false;
+            } else {
+                $parent.find('.page li').eq($index + 1).trigger('click');
+            }
+        });
+    })();
 });
 
 (function () {

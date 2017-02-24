@@ -831,6 +831,7 @@
     font-size: 20px;
     color: #3f3f3f;
     margin-bottom: 30px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -1657,6 +1658,7 @@
 
     /* news */
     .news-list h3 {
+        height: auto;
         font-size: 14px;
     }
 
